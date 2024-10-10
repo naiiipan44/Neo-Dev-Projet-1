@@ -1,0 +1,32 @@
+/* CSS variables */
+:root {
+  --main-background-color: #f7f7f7;
+  --button-background-color: #ba786d;
+  --main-content-color: #d9d9d9;
+  --layout-color: #eee2df;
+  --main-font-style: ;
+  --title-font-style: ;
+  --text-font-size: ;
+  --title-font-size: ;
+}
+
+/* Global settings */
+
+* {
+  box-sizing: border-box;
+}
+/* Settings main page
+/* penser à mettre flex-wrap: wrap
+
+body {
+  margin: 0;
+}
+
+/* Media Queries */
+@media screen and (min-width: 400px) and (max-width: 999px) {
+  /* Code here */
+}
+
+@media screen and (min-width: 1000px) {
+  /* Code here */
+}
