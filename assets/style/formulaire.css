@@ -15,6 +15,11 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+}
+
 /* Header */
 
 .logo-neo-dev {
@@ -28,9 +33,7 @@ header > h1 {
 /* Settings main page
 /* penser à mettre flex-wrap: wrap
 
-body {
-  margin: 0;
-}
+
 
 /* Media Queries */
 @media screen and (min-width: 400px) and (max-width: 999px) {
