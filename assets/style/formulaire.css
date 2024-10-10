@@ -15,6 +15,11 @@
 * {
   box-sizing: border-box;
 }
+/* Header */
+
+header > img {
+  width: 100px;
+}
 /* Settings main page
 /* penser à mettre flex-wrap: wrap
 
