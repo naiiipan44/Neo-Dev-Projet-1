@@ -20,6 +20,11 @@
 header > img {
   width: 100px;
 }
+
+header > h1 {
+  font-family: "Monoton", sans-serif;
+  font-style: normal;
+}
 /* Settings main page
 /* penser à mettre flex-wrap: wrap
 
