@@ -18,10 +18,15 @@
 
 body {
   margin: 0;
+  flex-wrap: wrap;
 }
 
 /* Header */
 
+header {
+  display: flex;
+  justify-content: space-around;
+}
 .logo-neo-dev {
   width: 100px;
 }
@@ -31,10 +36,28 @@ header > h1 {
   font-style: normal;
   font-weight: 100;
 }
+
+/* Main */
+
+main > section {
+  display: flex;
+  flex-direction: column;
+}
+
+body > main > form.user-form > fieldset > legend {
+  font-weight: bold;
+}
 /* Settings main page
 /* penser à mettre flex-wrap: wrap
 
 
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Media Queries */
 @media screen and (min-width: 400px) and (max-width: 999px) {
