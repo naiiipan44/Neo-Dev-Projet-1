@@ -55,15 +55,14 @@ header > .picture-upload-section {
 
 main > section {
   display: flex;
+  margin: auto;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-body > main > section > form > p {
-  margin: 0;
-}
-
-body > main > fieldset > legend {
-  font-weight: bold;
+main > section > form > .form-case {
+  width: 100%;
 }
 
 body > main > button {
@@ -77,7 +76,31 @@ body > main > button {
   font-weight: bold;
   position: absolute;
   left: 42.5%;
+  bottom: 10%;
 }
+
+body > main > fieldset {
+  margin: auto;
+  width: 500px;
+  text-align: center;
+  justify-content: center;
+}
+/*
+body > main > section > .user-form {
+  flex-direction: column;
+}
+
+body > main > section > form > p {
+  margin: 0;
+}
+
+
+
+body > main > fieldset > legend {
+  font-weight: bold;
+}
+
+
 
 /* Settings main page
 /* penser à mettre flex-wrap: wrap
