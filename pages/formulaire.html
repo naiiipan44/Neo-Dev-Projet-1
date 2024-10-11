@@ -11,9 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -28,60 +31,53 @@
       <h1>Créez votre profil</h1>
 
       <section class="picture-upload-section">
-      <img
-        class="picture-icon"
-        src="../assets/images/picture-icon.png"
-        alt="Ceci est l'icône d'une image"
-        title="Icone image"
-      />
-      <p>Uploadez une photo de profil</p>
-    </section>
+        <img
+          class="picture-icon"
+          src="../assets/images/picture-icon.png"
+          alt="Ceci est l'icône d'une image"
+          title="Icone image"
+        />
+        <p>Uploadez une photo de profil</p>
+      </section>
     </header>
-
     <!-- Formulaire de contact -->
     <main>
       <h2>Vos informations</h2>
-
-      <section>
-      <form class="user-form">
-        <label class="case-name" for="user-name">Nom d'utilisateur</label>
-        <input class="form-case" type="text" id="user-name" />
-
+      <form>
+        <div class="case-names">
+        <label for="user-name">Nom d'utilisateur</label>
         <label for="user-password">Mot de passe</label>
-        <input class="form-case" type="password" id="user-password" />
-
         <label for="user-mail">Email</label>
-        <input class="form-case" type="email" id="user-mail" />
+        <label for="user-current-city">Ville</label>
+        <label for="user-current-formation">Formation</label>
+        <label for="user-linkedin">LinkedIn</label>
+        <label for="user-github">GitHub</label>
+        </div>
+        <div class="form-boxes">
+        <input type="text" placeholder="Nom d'utilisateur*" />
+        <input type="password" id="user-password" />
+        <input type="email" id="user-mail" />
+        <input type="text" id="user-current-city" />
+        <input type="text" id="user-current-formation" />
+        <input type="text" id="user-linkedin" />
+        <input type="text" id="user-github" />
+        </div>
+      </form>
 
-        <section class="languages">
         <p>Languages</p>
         <p>&#128050;Javascript</p>
-      </section>
         <!--
         <input class="form-case" type="langages" id="user-langages" />
         
         -->
-
-        <img class="plus-button"
+        <img
+          class="plus-button"
           src="../assets/images/plus-circle-icon.png"
           alt="Ceci est l'icône pour ajouter un language"
           title="icône ajouter language"
         />
 
-        <label for="user-current-city">Ville</label>
-        <input class="form-case" type="text" id="user-current-city" />
-
-        <label for="user-current-formation">Formation</label>
-        <input class="form-case" type="text" id="user-current-formation" />
-
-        <label for="user-linkedin">LinkedIn</label>
-        <input class="form-case" type="text" id="user-linkedin" />
-
-        <label for="user-github">GitHub</label>
-        <input class="form-case" type="text" id="user-github" />
-      </section>
-
-      <!--Section profil-->
+        <!--Section profil-->
         <fieldset>
           <legend>Votre profil</legend>
           <input
@@ -109,7 +105,7 @@
 
         <!--Bouton validez votre inscription-->
 
-        <button type="submit" class="submit-button">
+        <button type="submit">
           Valider mon inscription
         </button>
       </form>

@@ -57,30 +57,26 @@ main > h2 {
   text-align: center;
 }
 
-main > section {
+main {
   display: flex;
   margin: auto;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-main > section > form > .form-case {
+main > form {
   display: flex;
   flex-direction: column;
-  width: 100%;
   box-sizing: border-box;
 }
 
-main > section > form > input {
-  field-sizing: content;
+main > form > div {
+  flex-direction: column;
+  align-self: flex-start;
 }
 
-main > section {
-  text-align: right;
-}
-
-body > main > button {
+body > main > form > button {
   text-align: center;
   background-color: #ba786d;
   padding: 16px;
@@ -95,10 +91,12 @@ body > main > button {
 }
 
 body > main > fieldset {
+  display: flex;
   margin: auto;
   width: 500px;
   text-align: center;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 body > main > fieldset > legend {
