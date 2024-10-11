@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neo Dev | Formulaire</title>
+    <link href="../assets/style/formulaire.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--Menu haut-->
+    <header>
+      <img
+        class="logo-neo-dev"
+        src="../assets/images/logo.png"
+        alt="Ceci est le logo de Neo Dev"
+        title="Logo Neo Dev"
+      />
+      <h1>Créez votre profil</h1>
+
+      <section class="picture-upload-section">
+      <img
+        class="picture-icon"
+        src="../assets/images/picture-icon.png"
+        alt="Ceci est l'icône d'une image"
+        title="Icone image"
+      />
+      <p>Uploadez une photo de profil</p>
+    </section>
+    </header>
+
+    <!-- Formulaire de contact -->
+    <main>
+      <h2>Vos informations</h2>
+
+      <section>
+      <form class="user-form">
+        <label for="user-name">Nom d'utilisateur</label>
+        <input type="text" id="user-name" />
+
+        <label for="user-password">Mot de passe</label>
+        <input type="password" id="user-password" />
+
+        <label for="user-mail">Email</label>
+        <input type="email" id="user-mail" />
+
+        <label for="user-langages">Languages</label>
+        <input type="langages" id="user-langages" />
+        <p>&#128050;Javascript</p>
+
+        <img
+          src="../assets/images/plus-circle-icon.png"
+          alt="Ceci est l'icône pour ajouter un language"
+          title="icône ajouter language"
+        />
+
+        <label for="user-current-city">Ville</label>
+        <input type="text" id="user-current-city" />
+
+        <label for="user-current-formation">Formation</label>
+        <input type="text" id="user-current-formation" />
+
+        <label for="user-linkedin">LinkedIn</label>
+        <input type="text" id="user-linkedin" />
+
+        <label for="user-github">GitHub</label>
+        <input type="text" id="user-github" />
+      </section>
+
+        <fieldset>
+          <legend>Votre profil</legend>
+          <input
+            type="radio"
+            id="recruteur"
+            name="profil-status"
+            value="recruteur"
+          />
+          <label for="recruteur">Recruteur</label>
+          <input
+            type="radio"
+            id="en-recherche"
+            name="profil-status"
+            value="en-recherche"
+          />
+          <label for="en-recherche">En recherche</label>
+          <input
+            type="radio"
+            id="not-filled"
+            name="profil-status"
+            value="not-filled"
+          />
+          <label for="Non-renseigné">Non-renseigné</label>
+        </fieldset>
+
+        <button type="submit" class="submit-button">
+          Valider mon inscription
+        </button>
+      </form>
+    </main>
+
+    <!--Copyright-->
+
+    <footer>
+      <p>©Copyright Neo-Dev app</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

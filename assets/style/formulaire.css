@@ -1,0 +1,75 @@
+/* CSS variables */
+:root {
+  --main-background-color: #f7f7f7;
+  --button-background-color: #ba786d;
+  --main-content-color: #d9d9d9;
+  --layout-color: #eee2df;
+  --main-font-style: ;
+  --title-font-style: ;
+  --text-font-size: ;
+  --title-font-size: ;
+}
+
+/* Global settings */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+.logo-neo-dev {
+  width: 100px;
+}
+
+header > h1 {
+  font-family: "Monoton", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+header > .picture-upload-section {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main */
+
+main > section {
+  display: flex;
+  flex-direction: column;
+}
+
+body > main > form.user-form > fieldset > legend {
+  font-weight: bold;
+}
+/* Settings main page
+/* penser à mettre flex-wrap: wrap
+
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media Queries */
+@media screen and (min-width: 400px) and (max-width: 999px) {
+  /* Code here */
+}
+
+@media screen and (min-width: 1000px) {
+  /* Code here */
+}
