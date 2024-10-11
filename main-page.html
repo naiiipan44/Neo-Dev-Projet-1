@@ -27,7 +27,36 @@
             alt="logo of the site"
             class="logo"
         /></a>
-        <section>
+        <div id="search-bar-div">
+          <img
+            src="assets/images/rechercher.png"
+            class="general-icons"
+            alt="search logo"
+          />
+          <a></a>
+          <input
+            type="text"
+            id="search-bar"
+            name="search-bar"
+            placeholder="Taper votre recherche ici !"
+          />
+        </div>
+        <div id="reseau-profil-div">
+          <img
+            src="assets/images/bouton-réseaux.png"
+            class="general-icons"
+            alt="to go to reseau page"
+            id="top-layout-reseaux"
+          />
+          <img
+            src="assets/images/profil.png"
+            class="general-icons"
+            alt="go to profil page"
+            id="top-layout-profil"
+          />
+        </div>
+
+        <section id="top-section">
           <button alt="sound" id="bouton-logo-sound">
             <img
               src="assets/images/son.png"
@@ -38,7 +67,7 @@
           <a href="" alt="redirection to accueil">Logout</a>
         </section>
       </section>
-      <h1>Hello X</h1>
+      <div id="main-title"></div>
       <nav>
         <a href="" class="nav-buttons" id="event-button">Event</a>
         <a href="" class="nav-buttons" id="job-dating-button"> Job dating </a>
@@ -46,12 +75,31 @@
       </nav>
     </header>
     <main>
+      <div id="profil-menu">
+        <a>
+          <img src="assets/images/icone-profil-1.png" class="general-icons" />
+        </a>
+        <a>
+          <img src="assets/images/icone-profil-2.png" class="general-icons" />
+        </a>
+        <a
+          ><img src="assets/images/icone-profil-1.png" class="general-icons"
+        /></a>
+        <a
+          ><img src="assets/images/icone-profil-2.png" class="general-icons"
+        /></a>
+        <button id="button-add">Add new profils !</button>
+      </div>
       <section id="post-container">
         <div id="profil-layout">
           <img src="assets/images/profil.png" class="general-icons" />
           <h2>Lucie - Capgemini</h2>
         </div>
-        <p>Comment</p>
+        <form id="commentary-section">
+          <label for="comment"></label>
+          <textarea id="comment" rows="5" placeholder="Add a comment">
+          </textarea>
+        </form>
         <div id="comment-layout">
           <a>
             <img
@@ -95,14 +143,49 @@
           </div>
         </div>
       </section>
+      <div id="bloc-messagerie">
+        <div id="message-container"></div>
+        <div id="message-overlay">
+          <img
+            src="assets/images/messagerie.png"
+            alt="messagerie"
+            class="general-icons"
+          />
+          <p>Messagerie</p>
+        </div>
+      </div>
     </main>
     <footer>
       <div id="footer-container">
-        <img src="assets/images/rechercher.png" class="general-icons" />
-        <img src="assets/images/bouton-réseaux.png" class="general-icons" />
-        <img src="assets/images/messagerie.png" class="general-icons" />
-        <img src="assets/images/profil.png" class="general-icons" />
+        <img
+          src="assets/images/rechercher.png"
+          class="general-icons"
+          id="recherche-button"
+        />
+        <img
+          src="assets/images/bouton-réseaux.png"
+          class="general-icons"
+          id="reseau-button"
+        />
+        <img
+          src="assets/images/messagerie.png"
+          class="general-icons"
+          id="messagerie-button"
+        />
+        <img
+          src="assets/images/profil.png"
+          class="general-icons"
+          id="profil-button"
+        />
       </div>
+      <p>©Copyright Neo-Dev app</p>
+      <!-- <a
+        href="/pages/formulaire.html"
+        alt="retour à la page principale"
+        target="_blank"
+        >Page suivante</a
+      > -->
     </footer>
+    <script src="/assets/js/main-page.js"></script>
   </body>
 </html>

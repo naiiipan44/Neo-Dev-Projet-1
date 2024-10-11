@@ -11,62 +11,59 @@
     <link rel="stylesheet" href="accueil.css" />
   </head>
   <body>
-    <header>
-      <img
-        src="/Neo-Dev-Projet-1/assets/images/logo.png"
-        alt="logo"
-        class="logo"
-      />
-    </header>
-    <main>
-      <section class="img" ;>
-        <img
-          src="/Neo-Dev-Projet-1/assets/images/StockPhotoLadyComputer.jpg"
-          alt="photolady"
-          class="photolady"
-        />
+    <div class="container">
+      <header>
+        <img src="../assets/images/logo.png" alt="logo" class="logo" />
+      </header>
+      <main>
+        <section class="img">
+          <img
+            src="../assets/images/StockPhotoLadyComputer.jpg"
+            alt="photolady"
+            class="photolady"
+          />
 
-        <img
-          src="/Neo-Dev-Projet-1/assets/images/StockPhotoLadyLaughing.jpg"
-          alt="ladylaugh"
-          class="ladylaugh"
-        />
+          <img
+            src="../photosaccueil/pexels-imperioame-15835598.jpg"
+            alt="ladylaugh"
+            class="ladylaugh"
+          />
 
-        <img
-          src="/Neo-Dev-Projet-1/assets/images/StockPhotoLadyComputer.jpg"
-          alt="ladylaugh2"
-          class="ladylaugh2"
-        />
+          <img
+            src="../photosaccueil/pexels-mart-production-7606074.jpg"
+            alt="ladylaugh2"
+            class="ladylaugh2"
+          />
 
-        <img
-          src="/Neo-Dev-Projet-1/assets/images/StockPhotoLadyComputer.jpg"
-          alt="ladycomp"
-          class="ladycomp"
-        />
-      </section>
-    </main>
+          <img
+            src="../photosaccueil/pexels-bertellifotografia-17767244.jpg"
+            alt="ladycomp"
+            class="ladycomp"
+          />
+        </section>
 
-    <section class="button">
-      <button><strong> Rejoins-nous ! </strong></button>
-      <h1><i> Déjà membre ? </i></h1>
-    </section>
+        <section class="button">
+          <form class="user-form">
+            <label for="user-name">Nom d'utilisateur : </label>
+            <input type="text" id="user-name" />
+            <label for="user-password">Mot de passe : </label>
+            <input type="password" id="user-password" />
 
-		<section class=" form">
-			<form class="user-form">
-				<label for="user-name">Nom d'utilisateur</label>
-				<input type="text" id="user-name" />
-				<label for="user-password">Mot de passe</label>
-				<input type="password" id="user-password" />
-				
-	<h2> <i> *Mot de passe oublié ? </i>  </h2>
-				
+            <h2><i> *Mot de passe oublié ? </i></h2>
+          </form>
 
-		</section>
-   
-	
+          <button class="connection">Se connecter</button>
 
-    <footer>
-      <h2><i> @ copyright Neo-Dev app </i></h2>
-    </footer>
+          <div class="membre">
+            <h1><i> Pas encore membre ? </i></h1>
+            <button>Rejoins-nous !</button>
+          </div>
+        </section>
+      </main>
+      <div class="footer-espace"></div>
+      <footer>
+        <h2><i> @ copyright Neo-Dev app </i></h2>
+      </footer>
+    </div>
   </body>
 </html>
