@@ -1,0 +1,149 @@
+/* CSS variables */
+:root {
+  --main-background-color: #f7f7f7;
+  --button-background-color: #ba786d;
+  --main-content-color: #d9d9d9;
+  --layout-color: #eee2df;
+  --main-font-style: "Inter", sans-serif;
+  --title-font-style: ;
+  --text-font-size: ;
+  --title-font-size: ;
+}
+
+/* Global settings */
+
+* {
+  box-sizing: border-box;
+}
+/* Settings main page
+/* penser à mettre flex-wrap: wrap*/
+
+body {
+  margin: 0;
+  font-family: var(--main-font-style);
+}
+
+p {
+  margin: 0;
+}
+/* Header */
+
+.logo {
+  max-width: 16vw;
+}
+
+.sound-toggle {
+  max-width: 5vw;
+  width: 16vw;
+  max-height: 5vw;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Project previews */
+
+#images-of-projects {
+  background-image: url("/assets/images/screenshotKoala.png");
+  height: 70vh;
+  object-fit: contain;
+  border: #ba786d 1px solid;
+  border-radius: 50px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+/* Profile information */
+
+article {
+  background-color: var(--layout-color);
+  border: #ba786d solid 1px;
+  border-radius: 30px;
+  padding-top: 0;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+h1 {
+  background-color: var(--button-background-color);
+  max-width: 15vw;
+  border: #ba786d solid 1px;
+  border-radius: 30px;
+  padding-left: 1vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  margin: 0;
+}
+
+#profile-w-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+#like-dislike-buttons {
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10vw 1vw 10vw;
+}
+
+#like {
+  width: 3vw;
+}
+
+#dislike {
+  width: 3vw;
+}
+
+#competences {
+  display: flex;
+  justify-content: flex-end;
+}
+
+article > div > img {
+  height: 4vh;
+  padding-right: 1vw;
+}
+
+#reseaux {
+  display: flex;
+  justify-content: space-around;
+  padding: 1vh;
+}
+
+button {
+  width: 10vw;
+  padding: 10px;
+  border: #ba786d solid 1px;
+  border-radius: 20px;
+  background-color: var(--main-content-color);
+}
+#about-me {
+  padding: 0 2vw 2vw 2vw;
+}
+
+/* Like/Dislike */
+
+/* Media Queries */
+@media screen and (min-width: 400px) and (max-width: 999px) {
+  /* Code here */
+}
+
+@media screen and (min-width: 1000px) {
+  /* Code here */
+  #profile-w-buttons {
+    max-width: 50vw;
+    position: fixed;
+    overflow: auto;
+    bottom: 1vh;
+    left: 5px;
+  }
+
+  #images-of-projects {
+    height: 90vh;
+  }
+}
