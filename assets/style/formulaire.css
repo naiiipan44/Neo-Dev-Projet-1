@@ -19,6 +19,14 @@
 body {
   margin: 0;
   flex-wrap: wrap;
+  font-family: "Montserrat", sans-serif;
+}
+
+.montserrat-body-policed {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
 }
 
 /* Header */
@@ -61,9 +69,14 @@ body > main > fieldset > legend {
 body > main > button {
   text-align: center;
   background-color: #ba786d;
-  padding: 8px;
+  padding: 16px;
   margin: 8px;
-  border: ;
+  border: #8a3f32;
+  border-radius: 32px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  position: absolute;
+  left: 42.5%;
 }
 
 /* Settings main page
