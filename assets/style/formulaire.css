@@ -34,6 +34,7 @@ header {
 header > h1 {
   font-family: "Monoton", sans-serif;
   font-style: normal;
+  font-weight: 100;
 }
 
 header > .picture-upload-section {
@@ -55,6 +56,14 @@ body > main > section > form > p {
 
 body > main > fieldset > legend {
   font-weight: bold;
+}
+
+body > main > button {
+  text-align: center;
+  background-color: #ba786d;
+  padding: 8px;
+  margin: 8px;
+  border: ;
 }
 
 /* Settings main page
