@@ -34,7 +34,6 @@ header {
 header > h1 {
   font-family: "Monoton", sans-serif;
   font-style: normal;
-  font-weight: 100;
 }
 
 header > .picture-upload-section {
@@ -50,9 +49,14 @@ main > section {
   flex-direction: column;
 }
 
-body > main > form.user-form > fieldset > legend {
+body > main > section > form > p {
+  margin: 0;
+}
+
+body > main > fieldset > legend {
   font-weight: bold;
 }
+
 /* Settings main page
 /* penser à mettre flex-wrap: wrap
 
@@ -63,6 +67,17 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer > p {
+  position: fixed;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  background-color: #ba786d;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 0;
 }
 
 /* Media Queries */
