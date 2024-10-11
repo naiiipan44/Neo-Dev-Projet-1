@@ -1,0 +1,183 @@
+/* CSS variables */
+:root {
+  --main-background-color: #f7f7f7;
+  --button-background-color: #ba786d;
+  --main-content-color: #d9d9d9;
+  --layout-color: #eee2df;
+  --main-font-style: ;
+  --title-font-style: ;
+  --text-font-size: ;
+  --title-font-size: ;
+}
+
+/* Global settings */
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+}
+/* Settings main page
+/* penser à mettre flex-wrap: wrap */
+
+body {
+  margin: 0;
+}
+
+a,
+p,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Main settings */
+
+/* Header */
+
+/* Top layout */
+.top-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+#bouton-logo-sound {
+  margin: 0 10px 0 0;
+}
+
+#logo-sound {
+  width: 16px;
+  height: auto;
+}
+
+.logo {
+  width: 16vw;
+  height: auto;
+}
+
+h1 {
+  font-family: "Monoton", sans-serif;
+  font-weight: 100;
+  margin: 0 0 5px 10px;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-buttons {
+  width: 28%;
+  background-color: var(--button-background-color);
+  border-radius: 10px;
+  height: 30px;
+  padding: 5px 5px 0 5px;
+  text-align: center;
+}
+
+nav > a {
+  font-size: 14px;
+}
+/* Main */
+
+/* Post Layout */
+
+#post-container {
+  margin: 10px 0 0 0;
+}
+
+.general-icons {
+  width: auto;
+  height: 26px;
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 10px 0 0;
+}
+
+#post-container > p {
+  height: 64px;
+  background-color: var(--main-content-color);
+  margin: 0.1px 0 0 0;
+}
+
+#profil-layout {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  background-color: var(--layout-color);
+  border-style: solid;
+  border-width: 1px 0;
+  border-color: black;
+  margin: 10px 0 0 0;
+  font-weight: 100;
+  width: 100%;
+}
+
+#comment-layout {
+  height: 48px;
+  background-color: var(--layout-color);
+  border-style: solid;
+  border-width: 1px 0;
+  border-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Other profils */
+h3 {
+  background-color: var(--button-background-color);
+  height: 40px;
+  font-size: 12px;
+  margin: 0;
+  padding: 10px 0 0 10px;
+  font-weight: 400;
+}
+
+#profil-container {
+  background-color: var(--main-background-color);
+  border-style: solid;
+  border-width: 1px 0;
+  border-color: black;
+  height: 45px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Bottom layout */
+
+#blank-area {
+  background-color: var(--main-content-color);
+  width: 100%;
+  height: 150px;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  border-color: black;
+}
+
+/* Bottom menu/Footer */
+#footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--layout-color);
+  height: 56px;
+}
+/* Media Queries */
+@media screen and (min-width: 400px) and (max-width: 999px) {
+  /* Code here */
+}
+
+@media screen and (min-width: 1000px) {
+  /* Code here */
+}
