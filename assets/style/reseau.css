@@ -5,7 +5,7 @@
   --main-content-color: #d9d9d9;
   --layout-color: #eee2df;
   --main-font-style: "Inter", sans-serif;
-  --title-font-style: ;
+  --title-font-style: "Monoton", sans-serif;
   --text-font-size: ;
   --title-font-size: ;
 }
@@ -44,12 +44,17 @@ header {
   align-items: center;
 }
 
+h2 {
+  font-family: var(--title-font-style);
+}
 /* Project previews */
 
 #images-of-projects {
-  background-image: url("/assets/images/screenshotKoala.png");
-  height: 70vh;
-  object-fit: contain;
+  /* background-image: url("/assets/images/screenshotKoala.png"); */
+  height: 80vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   border: #ba786d 1px solid;
   border-radius: 50px;
   margin-left: 5vw;
@@ -92,11 +97,11 @@ h1 {
 }
 
 #like {
-  width: 3vw;
+  min-width: 3vw;
 }
 
 #dislike {
-  width: 3vw;
+  min-width: 3vw;
 }
 
 #competences {
@@ -130,7 +135,18 @@ button {
 
 /* Media Queries */
 @media screen and (min-width: 400px) and (max-width: 999px) {
-  /* Code here */
+  #like {
+    position: absolute;
+    left: 76vw;
+    top: 50vw;
+    min-width: 10vw;
+  }
+  #dislike {
+    position: absolute;
+    left: 10vw;
+    top: 50vw;
+    min-width: 10vw;
+  }
 }
 
 @media screen and (min-width: 1000px) {
