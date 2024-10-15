@@ -11,9 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -28,91 +31,106 @@
       <h1>Créez votre profil</h1>
 
       <section class="picture-upload-section">
-      <img
-        class="picture-icon"
-        src="../assets/images/picture-icon.png"
-        alt="Ceci est l'icône d'une image"
-        title="Icone image"
-      />
-      <p>Uploadez une photo de profil</p>
-    </section>
+        <img
+          class="picture-icon"
+          src="../assets/images/picture-icon.png"
+          alt="Ceci est l'icône d'une image"
+          title="Icone image"
+        />
+        <p>Uploadez une photo de profil</p>
+      </section>
     </header>
 
     <!-- Formulaire de contact -->
     <main>
+      <!-- popup : Check with Naima ! -->
+      <div class="pop-up">
+        <p>
+          Bravo, tu es maintenant inscrit, clique ci-dessous pour découvrir ton
+          fil d'actualité :
+        </p>
+        <a id="button-pop-up" href="/main-page.html">Clique ici !</a>
+      </div>
+      <!-- popup : Check with Naima ! -->
+
       <h2>Vos informations</h2>
 
       <section>
-      <form class="user-form">
-        <label class="case-name" for="user-name">Nom d'utilisateur</label>
-        <input class="form-case" type="text" id="user-name" />
+        <form class="user-form">
+          <label class="case-name" for="user-name">Nom d'utilisateur</label>
+          <input class="form-case" type="text" id="user-name" />
 
-        <label for="user-password">Mot de passe</label>
-        <input class="form-case" type="password" id="user-password" />
+          <label for="user-password">Mot de passe</label>
+          <input class="form-case" type="password" id="user-password" />
 
-        <label for="user-mail">Email</label>
-        <input class="form-case" type="email" id="user-mail" />
+          <label for="user-mail">Email</label>
+          <input class="form-case" type="email" id="user-mail" />
 
-        <section class="languages">
-        <p>Languages</p>
-        <p>&#128050;Javascript</p>
+          <section class="languages">
+            <p>Languages</p>
+            <p>&#128050;Javascript</p>
+            <img
+              class="plus-button"
+              src="../assets/images/plus-circle-icon.png"
+              alt="Ceci est l'icône pour ajouter un language"
+              title="icône ajouter language"
+            />
+          </section>
+          <!--<input class="form-case" type="langages" id="user-langages" />-->
+
+          <section>
+            <label for="user-current-city">Ville</label>
+            <input class="form-case" type="text" id="user-current-city" />
+
+            <label for="user-current-formation">Formation</label>
+            <input class="form-case" type="text" id="user-current-formation" />
+
+            <label for="user-linkedin">LinkedIn</label>
+            <input class="form-case" type="text" id="user-linkedin" />
+
+            <label for="user-github">GitHub</label>
+            <input class="form-case" type="text" id="user-github" />
+          </section>
+
+          <!--Section profil-->
+          <fieldset>
+            <legend>Votre profil</legend>
+            <input
+              type="radio"
+              id="recruteur"
+              name="profil-status"
+              value="recruteur"
+            />
+            <label for="recruteur">Recruteur</label>
+            <input
+              type="radio"
+              id="en-recherche"
+              name="profil-status"
+              value="en-recherche"
+            />
+            <label for="en-recherche">En recherche</label>
+            <input
+              type="radio"
+              id="not-filled"
+              name="profil-status"
+              value="not-filled"
+            />
+            <label for="not-filled">Non-renseigné</label>
+          </fieldset>
+
+          <!--Bouton validez votre inscription-->
+
+          <button type="submit" class="submit-button">
+            Valider mon inscription
+          </button>
+        </form>
       </section>
-        <!--
-        <input class="form-case" type="langages" id="user-langages" />
-        
-        -->
-
-        <img class="plus-button"
-          src="../assets/images/plus-circle-icon.png"
-          alt="Ceci est l'icône pour ajouter un language"
-          title="icône ajouter language"
-        />
-
-        <label for="user-current-city">Ville</label>
-        <input class="form-case" type="text" id="user-current-city" />
-
-        <label for="user-current-formation">Formation</label>
-        <input class="form-case" type="text" id="user-current-formation" />
-
-        <label for="user-linkedin">LinkedIn</label>
-        <input class="form-case" type="text" id="user-linkedin" />
-
-        <label for="user-github">GitHub</label>
-        <input class="form-case" type="text" id="user-github" />
-      </section>
-
-      <!--Section profil-->
-        <fieldset>
-          <legend>Votre profil</legend>
-          <input
-            type="radio"
-            id="recruteur"
-            name="profil-status"
-            value="recruteur"
-          />
-          <label for="recruteur">Recruteur</label>
-          <input
-            type="radio"
-            id="en-recherche"
-            name="profil-status"
-            value="en-recherche"
-          />
-          <label for="en-recherche">En recherche</label>
-          <input
-            type="radio"
-            id="not-filled"
-            name="profil-status"
-            value="not-filled"
-          />
-          <label for="not-filled">Non-renseigné</label>
-        </fieldset>
-
-        <!--Bouton validez votre inscription-->
-
-        <button type="submit" class="submit-button">
-          Valider mon inscription
-        </button>
-      </form>
+      <a
+        href="../main-page.html"
+        alt="retour à la page principale"
+        target="_blank"
+        >Page suivante</a
+      >
     </main>
 
     <!--Copyright-->
@@ -121,6 +139,6 @@
       <p>©Copyright Neo-Dev app</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="/assets/js/formulaire.js"></script>
   </body>
 </html>
