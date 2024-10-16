@@ -37,6 +37,11 @@ header {
   margin-top: 10%;
 }
 
+.logo:hover{
+  background-color: var(--button-background-color);
+  border-radius: 50%;
+}
+
 .img {
   display: flex;
   justify-content: center;

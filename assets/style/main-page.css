@@ -27,8 +27,19 @@ body {
 a,
 p,
 h2,
-h3 {
+h3, h4 {
   font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-size: 12px;
+  margin:0;
+  padding : 8px 2px;
+}
+
+h4 {
+  margin:0;
+  padding : 5px;
 }
 
 /* Main settings */
@@ -42,6 +53,7 @@ h3 {
   align-items: center;
   padding: 10px;
   width: 100%;
+  gap:10px;
 }
 
 .top-layout div {
@@ -57,6 +69,7 @@ h3 {
   /* margin: 0 10px 0 0; */
   border: none;
   background-color: white;
+  
 }
 
 #logo-sound {
@@ -100,6 +113,7 @@ h1 {
   display: flex;
   justify-content: flex-end;
   width: 50%;
+  gap:15px;
 }
 
 #top-layout-reseaux,
@@ -139,6 +153,10 @@ nav > a {
 
 /* Profil menu */
 
+#post-container {
+  scroll-behavior: smooth;
+}
+
 #profil-menu,
 #button-add {
   display: none;
@@ -147,7 +165,7 @@ nav > a {
 #button-add {
   border: none;
   background-color: var(--button-background-color);
-  border-radius: 20px;
+  border-radius: 10px;
   height: 10%;
   width: 75%;
 }
@@ -185,15 +203,16 @@ h2 {
 #commentary-section > textarea {
   width: 100%;
   background-color: var(--main-content-color);
-  height: 64px;
+  height: 58px;
   border-style: none;
   padding: 5px 0 0 10px;
   border-width: 0 0 1px 0;
   border-style: solid;
   border-color: black;
+  margin-bottom: 5px;
 }
 
-#profil-layout {
+.profil-layout {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -203,12 +222,12 @@ h2 {
   border-style: solid;
   border-width: 1px 0;
   border-color: black;
-  margin: 10px 0 0 0;
+  margin: 0;
   font-weight: 100;
   width: 100%;
 }
 
-#comment-layout {
+.comment-layout {
   height: 48px;
   background-color: var(--layout-color);
   border-style: solid;
@@ -219,6 +238,11 @@ h2 {
   justify-content: space-evenly;
   align-items: center;
 }
+
+#edit-profil {
+  display: none ;
+}
+
 
 /* Other profils */
 h3 {
@@ -283,7 +307,7 @@ h3 {
 /* Bottom menu/Footer */
 footer {
   background-color: var(--button-background-color);
-  height: 56px;
+  height: 52px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -305,6 +329,7 @@ footer p {
   #search-bar-div,
   #search-bar-div > img {
     display: flex;
+    margin: 10px;;
   }
 
   #recherche-button {
@@ -362,7 +387,7 @@ footer p {
   }
 
   .top-layout {
-    height: 150px;
+    height: 120px;
   }
 }
 
@@ -408,15 +433,16 @@ footer p {
 
   #button-add {
     display: block;
+    height: 5%;
   }
 
   h1 {
     text-align: center;
-    margin: 10px 0;
+    margin: 0 0 20px 0;
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1070px) {
   .nav-buttons,
   #button-add {
     width: 150px;
@@ -441,10 +467,32 @@ footer p {
 
   #post-container {
     width: 75%;
+    height:100%;
   }
 
   header {
     margin-bottom: 0;
     padding-bottom: 0;
+  }
+
+  html {
+    height: 100%;
+  }
+
+  main {
+    height: 585px;
+  }
+}
+
+@media screen and (min-width: 1070px) {
+  #profil-menu,
+  #bloc-messagerie {
+    width: 15%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  #edit-profil {
+    display: flex;
   }
 }
