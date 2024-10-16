@@ -13,15 +13,18 @@ divTitle.appendChild(userNameDisplay);
 // Ambiance sound and its button //
 const ambianceSound = document.getElementById("background-sound");
 const buttonSound = document.getElementById("bouton-logo-sound");
+const imgSound = document.getElementById("logo-sound")
 let isSound = false;
 
 buttonSound.addEventListener("click", () => {
   if (!isSound) {
     ambianceSound.play();
     isSound=true;
+    imgSound.src="assets/images/son.png"
   } else {
     ambianceSound.pause();
     isSound=false;
+    imgSound.src="assets/images/son-off.png"
   }
 });
 
