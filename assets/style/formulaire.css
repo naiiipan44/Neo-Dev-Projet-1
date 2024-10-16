@@ -146,6 +146,7 @@ input {
 	justify-content: center;
 	align-items: center;
 	margin: 16px;
+	margin-top: 138px;
 	gap: 16px;
 }
 
@@ -160,7 +161,7 @@ input {
 
 .plus-circle-icon {
 	height: 50%;
-	align-items: baseline;
+	margin-top: 8px;
 }
 
 /* Footer */
