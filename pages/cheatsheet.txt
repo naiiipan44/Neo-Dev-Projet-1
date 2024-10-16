@@ -1,3 +1,5 @@
+HTML 
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -134,3 +136,154 @@
     <script src="script.js"></script>
   </body>
 </html>
+
+<<<<<<<<<<<<<<<<<<<<<<<<<
+
+CSS 
+
+
+/* CSS variables */
+:root {
+	--main-background-color: #f7f7f7;
+	--button-background-color: #ba786d;
+	--main-content-color: #d9d9d9;
+	--layout-color: #eee2df;
+	--main-font-style: ;
+	--title-font-style: ;
+	--text-font-size: ;
+	--title-font-size: ;
+}
+
+/* Global settings */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	flex-wrap: wrap;
+	font-family: "Montserrat", sans-serif;
+}
+
+.montserrat-body-policed {
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 100;
+	font-style: normal;
+}
+
+/* Header */
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 16px;
+}
+
+.logo-neo-dev {
+	width: 132px;
+	height: fit-content;
+}
+
+h1 {
+	font-family: Monoton, sans-serif;
+	font-weight: 100;
+}
+
+.picture-upload-section {
+	background-color: #d3b0aa;
+	border-radius: 94px;
+	padding: 54px;
+}
+
+.picture-icon {
+	width: 30px;
+}
+
+p {
+	text-align: right;
+	padding-right: 32px;
+}
+
+/* Main */
+
+main {
+	display: flex;
+	justify-content: center;
+}
+
+h2 {
+	margin: 16px;
+	padding-bottom: 16px;
+}
+
+
+#section-1,
+#section-2 {
+	width: 40%;
+	height: 500px;
+}
+
+
+#section-1 {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+#section-2  {
+	justify-content: center;
+}
+
+#section-1 > label {
+	padding: 32px;
+}
+
+input {
+	margin: 16px;
+}
+
+.titre-champs {
+	width: 139px;
+}
+
+/* Footer */
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer > p {
+	position: fixed;
+	text-align: center;
+	left: 0;
+	bottom: 0;
+	background-color: #ba786d;
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 0;
+}
+
+form > button {
+	text-align: center;
+	background-color: #ba786d;
+	padding: 16px;
+	margin: 8px;
+	border: #8a3f32;
+	border-radius: 32px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+
+/* Media Queries */
+@media screen and (min-width: 400px) and (max-width: 999px) {
+	/* Code here */
+}
+
+@media screen and (min-width: 1000px) {
+	/* Code here */
+}
+
+
