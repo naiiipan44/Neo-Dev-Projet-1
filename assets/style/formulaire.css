@@ -83,7 +83,6 @@ p {
 	width: 25%;
 	text-decoration: none;
 }
-/* Pop-up */
 
 /* Main */
 
@@ -102,12 +101,6 @@ h2 {
 	margin: 16px;
 	padding-bottom: 16px;
 }
-
-/* #section-1 {
-	display: flex;
-<<<<<<< HEAD
-	justify-content: flex-end;
-} */
 
 #section-1 > form {
 	display: flex;
