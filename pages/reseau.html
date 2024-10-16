@@ -8,46 +8,53 @@
   </head>
   <body>
     <header>
-      <img
+      <a href= "/main-page.html"><img
         src="/assets/images/logo.png"
         alt="NeoDev official logo"
-        class="logo"
-      />
+        id="logo"
+        class="clickable"
+      /></a>
       <h2 class="statut">ouvert à l'emploi</h2>
       <img
         src="/assets/images/son.png"
         alt="toggle sound on/off"
-        class="sound-toggle"
+        id="sound-toggle"
+        class="clickable"
       />
     </header>
 
     <main>
-      <section id="images-of-projects"></section>
+      <section id="images-of-projects" class="clickable"></section>
       <section id="profile-w-buttons">
         <article id="like-dislike-buttons">
           <img
             src="/assets/images/emoji-grimace-fill-pink.svg"
             alt="pas pour moi"
             id="dislike"
+            class="clickable"
           />
           <img
             src="/assets/images/emoji-kiss-fill-pink.svg"
             alt="cette personne me plaît"
             id="like"
+            class="clickable"
           />
         </article>
         <article>
+          <section id="name-and-button">
           <h1>John Doe</h1>
+          <button type="button" class ="clickable" id="hide-button">reduire</button>
+        </section>
           <div id="competences">
-            <img src="/assets/images/filetype-html.svg" alt="  HTML" />
+            <img src="/assets/images/filetype-html.svg" alt="HTML" />
             <img src="/assets/images/filetype-js.svg" alt="javaScript" />
             <img src="/assets/images/filetype-css.svg" alt="css" />
             <img src="/assets/images/drapUKArrondi.png" alt="English" />
             <img src="/assets/images/drapFRArrondi.png" alt="French" />
           </div>
           <div id="reseaux">
-            <button type="button">LinkedIn</button>
-            <button type="button">GitHub</button>
+            <a href="https://www.linkedin.com" class="clickable, external" id="linkedIn">LinkedIn</a>
+            <a href="https://www.github.com" class="clickable, external" id="GitHub">GitHub</a>
           </div>
 
           <div id="about-me">
@@ -69,6 +76,7 @@
         </article>
       </section>
     </main>
-    <footer><script src="/assets/js/reseau.js"></script></footer>
+    <footer></footer>
+    <script src="/assets/js/reseau.js"></script>
   </body>
 </html>
