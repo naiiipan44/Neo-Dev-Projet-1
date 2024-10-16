@@ -1,8 +1,8 @@
 // image variables
 const previewImages = document.getElementById("images-of-projects");
-const slide1 = 'url("/assets/images/websiteScreenshot.png")';
-const slide2 = 'url("/assets/images/screenshotNatureSite.png")';
-const slide3 = 'url("/assets/images/screenshotKoala.png")';
+const slide1 = 'url("/assets/images/harmonieScreen1.png")';
+const slide2 = 'url("/assets/images/harmonieScreen2.png")';
+
 
 // form variables
 const retrieveUser = localStorage.getItem("user");
@@ -28,8 +28,6 @@ previewImages.addEventListener("click", function () {
     console.log("B");
     previewImages.style.backgroundImage = slide2
   } else if (previewImages.style.backgroundImage == slide2) {
-    previewImages.style.backgroundImage = slide3
-  } else if (previewImages.style.backgroundImage == slide3) {
     previewImages.style.backgroundImage = slide1
   } else {
     previewImages.backgroundImage = slide1
@@ -38,19 +36,15 @@ previewImages.addEventListener("click", function () {
 
 //like/dislike button behaviours
 likeButton.addEventListener("click", function () {
+  // if (likeButton.src == "/assets/images/emoji-kiss-fill-pink.svg") {
   console.log("works");
   likeButton.src = "/assets/images/likeGreenSvg.svg"
-  setTimeout(function () {
-    window.location.href = "/pages/reseau2.html";
-  }, 1000)
+  // } else { likeButton.src = "/assets/images/emoji-kiss-fill-pink.svg" }
 })
 
 dislikeButton.addEventListener("click", function () {
   console.log("works also")
   dislikeButton.src = "/assets/images/dislikeBlueSvg.svg"
-  setTimeout(function () {
-    window.location.href = "/pages/reseau2.html";
-  }, 1000)
 })
 
 //hide button

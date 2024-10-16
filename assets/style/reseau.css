@@ -44,10 +44,10 @@ p {
   max-height: 5vw;
   margin-right: 1vw;
 }
-
+/* can we use a border instead of a size change? It's a little easier on the eyes */
 #sound-toggle:hover {
-    width: 45px;
-    height: 45px;
+    border: #ba786d solid 3px;
+    border-radius: 50%;
   }
 
 
@@ -59,10 +59,11 @@ header {
 
 h2 {
   font-family: var(--title-font-style);
+  margin-right: 6vw;
 }
 /* Project previews */
 
-#images-of-projects {
+#images-of-projects, #images-of-projects2 {
   /* background-image: url("/assets/images/screenshotKoala.png"); */
   height: 80vh;
   background-size: contain;
@@ -73,6 +74,8 @@ h2 {
   margin-left: 5vw;
   margin-right: 5vw;
 }
+
+
 
 /* Profile information */
 
@@ -103,11 +106,12 @@ h1 {
 }
 
 #like-dislike-buttons {
-  background: none;
+  background: rgba(255, 255, 255, 0.579);
   border: none;
   display: flex;
   justify-content: space-between;
-  padding: 0 10vw 1vw 10vw;
+  padding: 1vw 1vw 1vw 1vw;
+  margin: 0 9vw 0 9vw
 }
 
 #like {
@@ -214,17 +218,21 @@ article > div > img {
     min-width: 30vw;
     max-height: 20vh;
     min-height: 5vh;
-    font-size: xx-large;
+    font-size: x-small;
   }
 
   p {
-    font-size: x-large;
+    font-size: small;
   }
 
   #images-of-projects{
     background-size: cover;
   }
 }
+
+#sound-toggle {
+  width: 5vw;
+  max-height: 6vw;}
 
 @media screen and (min-width: 1000px) {
   /* Code here */

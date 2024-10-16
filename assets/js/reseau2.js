@@ -1,8 +1,9 @@
 // image variables
-const previewImages = document.getElementById("images-of-projects");
-const slide1 = 'url("/assets/images/websiteScreenshot.png")';
-const slide2 = 'url("/assets/images/screenshotNatureSite.png")';
-const slide3 = 'url("/assets/images/screenshotKoala.png")';
+
+const previewImages = document.getElementById("images-of-projects")
+const slide1 = 'url("/assets/images/NinonScreen1.png")';
+const slide2 = 'url("/assets/images/NinonScreen2.png")';
+const slide3 = 'url("/assets/images/NinonScreen3.png")';
 
 // form variables
 const retrieveUser = localStorage.getItem("user");
@@ -41,7 +42,7 @@ likeButton.addEventListener("click", function () {
   console.log("works");
   likeButton.src = "/assets/images/likeGreenSvg.svg"
   setTimeout(function () {
-    window.location.href = "/pages/reseau2.html";
+    window.location.href = "/pages/reseau3.html";
   }, 1000)
 })
 
@@ -49,7 +50,7 @@ dislikeButton.addEventListener("click", function () {
   console.log("works also")
   dislikeButton.src = "/assets/images/dislikeBlueSvg.svg"
   setTimeout(function () {
-    window.location.href = "/pages/reseau2.html";
+    window.location.href = "/pages/reseau3.html";
   }, 1000)
 })
 
