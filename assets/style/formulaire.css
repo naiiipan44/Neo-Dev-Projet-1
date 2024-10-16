@@ -101,14 +101,24 @@ h2 {
 	padding-bottom: 16px;
 }
 
-#section-1 {
+/* #section-1 {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
+} */
+
+#section-1 > form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding: 0 15%;
 }
 
 #section-2 {
-	justify-content: flex-end;
+	display: flex;
+	justify-content: center;
 	align-items: flex-end;
+	gap: 15%;
+	flex-direction: column;
 }
 
 #section-1 > label {
