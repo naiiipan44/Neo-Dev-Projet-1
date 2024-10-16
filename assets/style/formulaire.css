@@ -113,20 +113,14 @@ h2 {
 	flex-direction: column;
 	align-items: flex-end;
 	padding: 0 15%;
+	margin: 16px;
+	gap: 32px;
 }
 
 input {
 	justify-content: flex-start;
 	flex-direction: column;
 	align-items: flex-start;
-}
-
-#section-1 > form {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	margin: 16px;
-	gap: 32px;
 }
 
 .titre-champ {
