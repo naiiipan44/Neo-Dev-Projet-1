@@ -8,6 +8,8 @@
   --title-font-style: "Monoton", sans-serif;
   --text-font-size: ;
   --title-font-size: ;
+  --like-green: #D1F1CE;
+  --dislike-blue: #CED3F1;
 }
 
 /* Global settings */
@@ -28,15 +30,26 @@ p {
 }
 /* Header */
 
-.logo {
-  max-width: 16vw;
+#logo {
+  max-width: 12vw;
 }
 
-.sound-toggle {
-  max-width: 5vw;
-  width: 16vw;
-  max-height: 5vw;
+#logo:hover {
+  background-color: var(--button-background-color);
+  border-radius: 50%;
 }
+
+#sound-toggle {
+  width: 3vw;
+  max-height: 5vw;
+  margin-right: 1vw;
+}
+
+#sound-toggle:hover {
+    width: 45px;
+    height: 45px;
+  }
+
 
 header {
   display: flex;
@@ -78,6 +91,7 @@ h1 {
   border: #ba786d solid 1px;
   border-radius: 30px;
   padding-left: 1vw;
+  padding-right: 1vw;
   padding-top: 1vh;
   padding-bottom: 1vh;
   margin: 0;
@@ -98,15 +112,47 @@ h1 {
 
 #like {
   min-width: 3vw;
+  padding: 3px;
+  margin-left: 20px;
+}
+
+#like:hover {
+  background-color: var(--like-green);
+  border-radius: 50%;
 }
 
 #dislike {
   min-width: 3vw;
+  padding: 3px;
+  margin-right: 20px;
+}
+
+#dislike:hover {
+  background-color: var(--dislike-blue);
+  border-radius: 50%;
 }
 
 #competences {
   display: flex;
   justify-content: flex-end;
+}
+
+#name-and-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+#hide-button {
+  background: none;
+  border: none;
+  font-size: small;
+  margin-right: 2vw;
+  padding: 0 1vw 0 1vw;
+}
+
+#hide-button:hover {
+  background-color: var(--button-background-color);
+  border-radius: 30px;
 }
 
 article > div > img {
@@ -120,32 +166,63 @@ article > div > img {
   padding: 1vh;
 }
 
-button {
+.clickable:hover {
+  cursor: pointer;
+}
+
+.external {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
   width: 10vw;
   padding: 10px;
   border: #ba786d solid 1px;
   border-radius: 20px;
   background-color: var(--main-content-color);
 }
+
+.external:hover {
+  background-color: var(--button-background-color);
+}
+
+
+
 #about-me {
   padding: 0 2vw 2vw 2vw;
+  display: block;
 }
 
 /* Like/Dislike */
 
 /* Media Queries */
-@media screen and (min-width: 400px) and (max-width: 999px) {
+@media screen and (min-width: 300px) and (max-width: 999px) {
   #like {
     position: absolute;
-    left: 76vw;
-    top: 50vw;
+    right: 10vw;
+    top: 80vh;
     min-width: 10vw;
   }
   #dislike {
     position: absolute;
     left: 10vw;
-    top: 50vw;
+    top: 80vh;
     min-width: 10vw;
+  }
+
+  #linkedIn, #GitHub {
+    max-width: fit-content;
+    min-width: 30vw;
+    max-height: 20vh;
+    min-height: 5vh;
+    font-size: xx-large;
+  }
+
+  p {
+    font-size: x-large;
+  }
+
+  #images-of-projects{
+    background-size: cover;
   }
 }
 
