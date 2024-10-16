@@ -98,7 +98,7 @@
       <div id="section-2">
         <div id="language">
           <form id="form" onkeydown="return event.key != 'Enter';">
-            <label for="todo">Langages</label>
+            <label for="todo"><strong>Langages</strong></label>
             <input
             type="text"
             name="todo"
@@ -106,40 +106,38 @@
             id="todoInput"
             value=""
             />
-            <button id="addButton">+</button>
-            <ul id="language-list">
-            </ul>
-            
-          <p><strong>Language</strong></p>
-          <p>&#128050;Javascript</p>
-          <img class="plus-circle-icon" src="../assets/images/plus-circle-icon.png" alt="Ceci est le bouton d'ajout de languages" title="Bouton language"/>
-        </div>
+            <a ><img id="add-button" class="plus-circle-icon" src="../assets/images/plus-circle-icon.png" alt="Ceci est le bouton d'ajout de languages" title="Bouton language"/>
+            </a>
+          <ul id="language-list">
+          </ul>
+        </div> 
 
         <!-- Profil de l'utilisateur -->
         <form>
           <fieldset>
             <legend>Votre profil</legend>
-            <input
+            <label for="recruteur">Recruteur</label><input
               type="radio"
               id="recruteur"
               name="profil-status"
               value="recruteur"
             />
-            <label for="recruteur">Recruteur</label>
+            
+            <label for="en-recherche">En recherche</label>
             <input
               type="radio"
               id="en-recherche"
               name="profil-status"
               value="en-recherche"
             />
-            <label for="en-recherche">En recherche</label>
+            
+            <label for="Classique">Non-renseignée</label>
             <input
               type="radio"
               id="not-filled"
               name="profil-status"
               value="not-filled"
             />
-            <label for="Classique">Non-renseignée</label>
           </fieldset>
 
           <!-- Bouton valider l'inscription-->
