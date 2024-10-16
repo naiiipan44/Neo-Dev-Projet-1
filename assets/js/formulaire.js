@@ -11,6 +11,27 @@ const userFormTable = {
   profilType: "",
 };
 
+///////////////////////////////////////////////////////
+// Incremented code language list
+
+const addButton = document.getElementById("addButton");
+const inputTodo = document.querySelector("#todoInput");
+const languageList = document.querySelector("#language-list");
+console.log(languageList);
+// Onsubmit we will run a function
+addButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  // We create a variable that we set to a new li node
+  const newTodo = document.createElement("li");
+  // We add the text to the li
+  newTodo.innerHTML = inputTodo.value;
+  // We add the li to the ul 
+  languageList.appendChild(newTodo);
+  // We clear the value of the input
+  inputTodo.value = "";
+});
+//////////////////////////
+
 // Extract the button that user will click on to validate his form
 const validationButton = document.querySelector(".submit-button");
 // Extract the container form, so we will be able to work on it
@@ -47,7 +68,14 @@ validationButton.addEventListener("click", (event) => {
   localStorage.setItem("user", jsonUser);
 
   // extract the HTML pop-up div into the JS script
-  const popup = document.querySelector(".pop-up");
+  const popup = document.querySelector(".popup-container");
   // change the CSS display property of the pop-up div to make it appear on the user screen
   popup.style.display = "block";
+
+  let phrasePopUp = document.createElement('h3');
+  const popUpDiv = document.querySelector('.popup');
+  
+  phrasePopUp.textContent=`Bravo ${userFormTable.name}, ton profil a été créé, clique ci-dessous pour le découvrir !`;
+  popUpDiv.appendChild(phrasePopUp);
 });
+

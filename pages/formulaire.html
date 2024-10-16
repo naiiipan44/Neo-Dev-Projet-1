@@ -45,15 +45,14 @@
     <p class="upload-text">Uploadez une photo de profil</p>
 
     <main>
-
       <!-- popup -->
-      <div class="pop-up">
-        <p>
-          Bravo, tu es maintenant inscrit, clique ci-dessous pour découvrir ton
-          fil d'actualité :
-        </p>
-        <a id="button-pop-up" href="/main-page.html">Clique ici !</a>
-      </div>
+       <div class="popup-container">
+        <div class="overlay"></div>
+        <div class="popup">
+          <a class="popuplink" id="return" href="formulaire.html">Retour en arrière</a>
+          <a href="/main-page.html" class="popuplink">Rejoins-nous</a>
+        </div>
+       </div>
       <!-- popup -->
 
        <!-- Formulaire d'inscription -->
@@ -98,6 +97,19 @@
       
       <div id="section-2">
         <div id="language">
+          <form id="form" onkeydown="return event.key != 'Enter';">
+            <label for="todo">Langages</label>
+            <input
+            type="text"
+            name="todo"
+            placeholder="Javascript"
+            id="todoInput"
+            value=""
+            />
+            <button id="addButton">+</button>
+            <ul id="language-list">
+            </ul>
+            
           <p><strong>Language</strong></p>
           <p>&#128050;Javascript</p>
           <img class="plus-circle-icon" src="../assets/images/plus-circle-icon.png" alt="Ceci est le bouton d'ajout de languages" title="Bouton language"/>
