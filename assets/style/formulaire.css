@@ -119,6 +119,10 @@ h2 {
 	display: flex;
 }
 
+.plus-circle-icon {
+	height: 50%;
+}
+
 #section-2 {
 	display: flex;
 	justify-content: center;
