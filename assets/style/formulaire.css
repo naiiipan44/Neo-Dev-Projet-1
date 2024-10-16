@@ -115,6 +115,10 @@ h2 {
 	padding: 0 15%;
 }
 
+#language {
+	display: flex;
+}
+
 #section-2 {
 	display: flex;
 	justify-content: center;
