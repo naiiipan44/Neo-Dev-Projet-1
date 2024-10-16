@@ -28,3 +28,13 @@ buttonSound.addEventListener("click", () => {
   }
 });
 
+
+// let scrollPostContainer = document.getElementById("post-container");
+// scrollPostContainer.addEventListener("scroll", () => {
+//   scrollPostContainer.scrollIntoView({
+//     behavior: "smooth",
+//     block: "start",
+//     inline: "nearest"
+//   })
+// });
+
