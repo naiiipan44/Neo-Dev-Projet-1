@@ -115,26 +115,6 @@ h2 {
 	padding: 0 15%;
 }
 
-#language {
-	display: flex;
-}
-
-.plus-circle-icon {
-	height: 50%;
-}
-
-#section-2 {
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
-	gap: 15%;
-	flex-direction: column;
-}
-
-#section-1 > label {
-	padding: 32px;
-}
-
 input {
 	justify-content: flex-start;
 	flex-direction: column;
@@ -151,6 +131,28 @@ input {
 
 .titre-champ {
 	margin-right: 32px;
+}
+
+#section-1 > label {
+	padding: 32px;
+}
+
+#section-2 {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	gap: 15%;
+	flex-direction: column;
+}
+
+#language {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.plus-circle-icon {
+	height: 50%;
+	align-items: baseline;
 }
 
 /* Footer */
