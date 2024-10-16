@@ -27,6 +27,55 @@ body {
 }
 
 /* Popup */
+/* Popup forgot password*/
+
+.popup-container-mdp {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100vh;
+  height: 100vh;
+}
+
+.popup-container-mdp.active {
+  display: block;
+}
+
+.forgot-password-popup {
+  width: 95%;
+  max-width: 500px;
+  min-width: 300px;
+  max-height: 200px;
+  padding: 30px;
+  margin: 2px;
+  box-sizing: border-box;
+  background: #ba786d;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  border-radius: 5px;
+}
+
+.forgot-password-popup p {
+  margin: 20px 0;
+  line-height: 1.4;
+}
+
+.popupexit-forgot {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-decoration: none;
+  color: #eee2df;
+  background-color: black;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+/*popup se connecter*/
+
 .popup-container {
   display: none;
   position: fixed;
@@ -76,6 +125,9 @@ body {
   width: 35%;
   text-align: center;
 }
+.popuplink:hover {
+  border: solid black 2px;
+}
 
 .popupexit {
   position: absolute;
@@ -109,8 +161,7 @@ header {
   margin-top: 10%;
 }
 
-
-.logo:hover{
+.logo:hover {
   background-color: var(--button-background-color);
   border-radius: 50%;
 }
@@ -196,14 +247,16 @@ h1 {
   font-weight: bold;
 }
 
-h2 {
+.mdp-forgot {
   font-size: 10px;
   font-family: "montserrat", sans-serif;
   font-weight: normal;
   cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 
-h2:hover {
+.mdp-forgot:hover {
   font-weight: bold;
 }
 
@@ -231,17 +284,48 @@ footer {
   font-size: 6px;
   margin: 0px 0;
   font-weight: normal;
+  font-size: 10px;
 }
 .footer-espace {
   height: 100px;
 }
 
 /* Media Queries */
+
+@media screen and (min-width: 10px) and (max-width: 399px) {
+  /* Code here */
+  .popup {
+    width: 60%;
+    height: 90%;
+    font-size: 15px;
+    padding: 20px;
+  }
+
+  .popuplink {
+    width: 150px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .popup-container {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 @media screen and (min-width: 400px) and (max-width: 999px) {
   /* Code here */
   .popup {
     width: 60%;
-    height: 10%;
+    height: 90%;
+    padding: 20px;
+  }
+
+  .popuplink {
+    width: 130px;
+    padding: 10px 15px;
+    font-size: 14px;
+    margin: 0 auto;
   }
 
   .popup-container {
@@ -254,7 +338,7 @@ footer {
     height: 100px;
   }
   .img {
-    gap: 20px;
+    gap: 15px;
   }
 }
 

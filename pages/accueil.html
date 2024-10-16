@@ -16,9 +16,29 @@
       <div class="popup">
         <h3>Pas encore de compte ?</h3>
         <p>Clique sur le bouton "rejoins-nous" pour créer ton compte !</p>
-        <a href="/" class="popuplink">Rejoins-nous</a>
+        <a href="/" class="popuplink">Rejoins-nous ! </a>
         <div>
           <a href="javascript:void(0)" class="popupexit modal-trigger">X</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-container-mdp">
+      <div class="overlay mdp-forgot">
+        <div class="forgot-password-popup">
+          <h3>Mot de passe oublié ?</h3>
+          <p>
+            Veuillez entrer votre adresse mail pour récupérer votre mot de
+            passe:
+          </p>
+          <form class="paswword-form">
+            <label for="user-name"> Adresse mail : </label>
+            <input type="text" id="user-name" />
+          </form>
+          <a href="/" class="popuplink">Envoyer</a>
+          <div>
+            <a href="javascript:void(0)" class="popupexit-forgot mdp">X</a>
+          </div>
         </div>
       </div>
     </div>
@@ -59,21 +79,26 @@
           <input type="text" id="user-name" />
           <label for="user-password">Mot de passe : </label>
           <input type="password" id="user-password" />
-
-          <h2><i> *Mot de passe oublié ? </i></h2>
+          <div class="modal-trigger-forgot">
+            <a href="javascript:void(0)" class="mdp-forgot"
+              ><i>*Mot de passe oublié ?</i></a
+            >
+          </div>
         </form>
 
         <button class="connection modal-trigger">Se connecter</button>
 
         <div class="membre">
           <h1><i> Pas encore membre ? </i></h1>
-          <a href=formulaire.html alt ="link to form"><button class="inscription">Rejoins-nous</button></a>
+          <a href="formulaire.html" alt="link to form"
+            ><button class="inscription">Rejoins-nous</button></a
+          >
         </div>
       </section>
     </main>
     <div class="footer-espace"></div>
     <footer>
-      <h2><i> @ copyright Neo-Dev app </i></h2>
+      <h4><i> @ copyright Neo-Dev app </i></h4>
     </footer>
     <script src="/assets/js/accueil.js"></script>
   </body>

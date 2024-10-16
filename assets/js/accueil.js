@@ -10,3 +10,15 @@ modalTriggers.forEach(trigger => {
 function toggleModal() {
   popupContainer.classList.toggle("active");
 }
+
+
+const popupContainerMdp = document.querySelector(".popup-container-mdp");
+const mdpForgot = document.querySelectorAll(".mdp-forgot");
+
+mdpForgot.forEach(forgot => {
+  forgot.addEventListener("click", toggleMdp);
+});
+
+function toggleMdp() {
+  popupContainerMdp.classList.toggle("active");
+}
