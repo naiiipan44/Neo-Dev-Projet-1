@@ -1,169 +1,187 @@
 /* CSS variables */
 :root {
-  --main-background-color: #f7f7f7;
-  --button-background-color: #ba786d;
-  --main-content-color: #d9d9d9;
-  --layout-color: #eee2df;
-  --main-font-style: ;
-  --title-font-style: ;
-  --text-font-size: ;
-  --title-font-size: ;
+	--main-background-color: #f7f7f7;
+	--button-background-color: #ba786d;
+	--main-content-color: #d9d9d9;
+	--layout-color: #eee2df;
+	--main-font-style: ;
+	--title-font-style: ;
+	--text-font-size: ;
+	--title-font-size: ;
 }
 
 /* Global settings */
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  flex-wrap: wrap;
-  font-family: "Montserrat", sans-serif;
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
 }
 
 .montserrat-body-policed {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 100;
+	font-style: normal;
 }
 
 /* Header */
 
 header {
-  display: flex;
-  justify-content: space-around;
+	display: flex;
+	justify-content: space-between;
+	padding: 16px;
 }
+
 .logo-neo-dev {
-  width: 100px;
+	width: 132px;
+	height: fit-content;
 }
 
-header > h1 {
-  font-family: "Monoton", sans-serif;
-  font-style: normal;
-  font-weight: 100;
+h1 {
+	font-family: Monoton, sans-serif;
+	font-weight: 100;
 }
 
-header > .picture-upload-section {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.picture-upload-section {
+	background-color: #d3b0aa;
+	border-radius: 94px;
+	padding: 54px;
 }
 
-/* Main */
+.picture-icon {
+	width: 30px;
+}
+
+p {
+	text-align: right;
+	padding-right: 32px;
+}
 
 /* Popup */
 .pop-up {
-  background-color: #ba786d;
-  margin: auto;
-  border: solid 1px black;
-  width: 50%;
-  text-align: center;
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  padding: 25px;
-  background: white;
-  transform: translate(-50%, -50%);
+	background-color: #ba786d;
+	margin: auto;
+	border: solid 1px black;
+	width: 50%;
+	text-align: center;
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	padding: 25px;
+	background-color: white;
+	transform: translate(-50%, -50%);
 }
 
 .pop-up > a {
-  background-color: #f7f7f7;
-  width: 25%;
-  text-decoration: none;
+	background-color: #f7f7f7;
+	width: 25%;
+	text-decoration: none;
 }
-/* Pop-up section to add --> check the style with Naima */
+/* Pop-up */
 
-main > h2 {
-  text-align: center;
-}
+/* Main */
 
-main > section {
-  display: flex;
-  margin: auto;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+main {
+	display: flex;
 }
 
-main > section > form > .form-case {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  box-sizing: border-box;
+#section-1,
+#section-2 {
+	width: 40%;
+	height: 500px;
 }
 
-main > section > form > input {
-  field-sizing: content;
+h2 {
+	align-self: center;
+	margin: 16px;
+	padding-bottom: 16px;
 }
 
-main > section {
-  text-align: right;
+/* #section-1 {
+	display: flex;
+<<<<<<< HEAD
+	justify-content: flex-end;
+} */
+
+#section-1 > form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding: 0 15%;
 }
 
-body > main > button {
-  text-align: center;
-  background-color: #ba786d;
-  padding: 16px;
-  margin: 8px;
-  border: #8a3f32;
-  border-radius: 32px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  position: absolute;
-  left: 42.5%;
-  bottom: 5%;
+#section-2 {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	gap: 15%;
+	flex-direction: column;
 }
 
-body > main > fieldset {
-  margin: auto;
-  width: 500px;
-  text-align: center;
-  justify-content: center;
+#section-1 > label {
+	padding: 32px;
 }
 
-body > main > fieldset > legend {
-  font-weight: bold;
+input {
+=======
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: flex-start;
 }
 
-/*
-body > main > section > .user-form {
-  flex-direction: column;
+#section-1 > form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+>>>>>>> 88da96eb8354f7c42a5105080e3cb8ce4453ecbc
+	margin: 16px;
+	gap: 32px;
 }
 
-
-
-
-
-
-
+.titre-champ {
+	margin-right: 32px;
+}
 
 /* Footer */
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 footer > p {
-  position: fixed;
-  text-align: center;
-  left: 0;
-  bottom: 0;
-  background-color: #ba786d;
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 0;
+	position: fixed;
+	text-align: center;
+	left: 0;
+	bottom: 0;
+	background-color: #ba786d;
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 0;
+}
+
+form > button {
+	text-align: center;
+	background-color: #ba786d;
+	padding: 16px;
+	margin: 8px;
+	border: #8a3f32;
+	border-radius: 32px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
 }
 
 /* Media Queries */
 @media screen and (min-width: 400px) and (max-width: 999px) {
-  /* Code here */
+	/* Code here */
 }
 
 @media screen and (min-width: 1000px) {
-  /* Code here */
+	/* Code here */
 }

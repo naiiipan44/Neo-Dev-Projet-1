@@ -109,7 +109,8 @@ header {
   margin-top: 10%;
 }
 
-.logo:hover {
+
+.logo:hover{
   background-color: var(--button-background-color);
   border-radius: 50%;
 }
