@@ -168,7 +168,7 @@ input {
 	align-items: flex-end;
 	gap: 15%;
 	flex-direction: column;
-	margin-left: 82px;;
+	margin-left: 82px;
 }
 
 #section-2 > form {
@@ -233,7 +233,7 @@ form > button {
 }
 
 /* Media Queries */
-@media screen and (min-width: 400px) and (max-width: 999px) {
+@media screen and (min-width: 320px) and (max-width: 414px) {
 	/* Code here */
 }
 
