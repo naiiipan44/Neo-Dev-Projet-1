@@ -128,7 +128,6 @@ h2 {
 }
 
 input {
-=======
 	justify-content: flex-start;
 	flex-direction: column;
 	align-items: flex-start;
@@ -138,7 +137,6 @@ input {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
->>>>>>> 88da96eb8354f7c42a5105080e3cb8ce4453ecbc
 	margin: 16px;
 	gap: 32px;
 }
