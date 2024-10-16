@@ -338,7 +338,7 @@ footer p {
   display: none;
 }
 /* Media Queries */
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 450px) {
   #search-bar-div,
   #search-bar-div > img {
     display: flex;
@@ -347,6 +347,14 @@ footer p {
 
   #recherche-button {
     display: none;
+  }
+
+  #logo-sound {
+    margin:0;
+  }
+
+  .top-layout {
+    gap:0px;
   }
 }
 
@@ -402,6 +410,7 @@ footer p {
   .top-layout {
     height: 120px;
   }
+  
 }
 
 @media screen and (min-width: 801px) {
