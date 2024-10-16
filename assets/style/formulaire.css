@@ -97,12 +97,14 @@ main {
 }
 
 h2 {
+	align-self: center;
 	margin: 16px;
 	padding-bottom: 16px;
 }
 
 /* #section-1 {
 	display: flex;
+<<<<<<< HEAD
 	justify-content: flex-end;
 } */
 
@@ -126,15 +128,23 @@ h2 {
 }
 
 input {
+=======
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+#section-1 > form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+>>>>>>> 88da96eb8354f7c42a5105080e3cb8ce4453ecbc
 	margin: 16px;
+	gap: 32px;
 }
 
-.titre-champs {
-	width: 139px;
-}
-
-.language {
-	width: 100%;
+.titre-champ {
+	margin-right: 32px;
 }
 
 /* Footer */

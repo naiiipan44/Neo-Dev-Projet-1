@@ -61,3 +61,23 @@ hideButton.addEventListener("click", function () {
     hideButton.textContent = "reduire"
   }
 })
+
+// Ambiance sound and its button //
+const ambianceSound = document.getElementById("background-sound");
+const buttonSound = document.getElementById("sound-toggle");
+// const imgSound = document.getElementById("logo-sound")
+let isSound = false;
+
+buttonSound.addEventListener("click", () => {
+  if (!isSound) {
+    ambianceSound.play();
+    isSound = true;
+    buttonSound.src = "/assets/images/son.png"
+    console.log("sound on")
+  } else {
+    ambianceSound.pause();
+    isSound = false;
+    buttonSound.src = "/assets/images/son-off.png"
+    console.log("sound off")
+  }
+});
