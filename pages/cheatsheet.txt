@@ -124,9 +124,8 @@ HTML
             Valider mon inscription
           </button>
         </form>
-       
       </div>
-
+</main>
          <!--Copyright-->
 
     <footer>
