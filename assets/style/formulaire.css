@@ -97,34 +97,28 @@ main {
 }
 
 h2 {
+	align-self: center;
 	margin: 16px;
 	padding-bottom: 16px;
 }
 
 #section-1 {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: flex-start;
 }
 
-#section-2 {
-	justify-content: flex-end;
+#section-1 > form {
+	display: flex;
+	flex-direction: column;
 	align-items: flex-end;
-}
-
-#section-1 > label {
-	padding: 32px;
-}
-
-input {
 	margin: 16px;
+	gap: 32px;
 }
 
-.titre-champs {
-	width: 139px;
-}
-
-.language {
-	width: 100%;
+.titre-champ {
+	margin-right: 32px;
 }
 
 /* Footer */
