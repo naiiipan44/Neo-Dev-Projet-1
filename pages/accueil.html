@@ -11,59 +11,70 @@
     <link rel="stylesheet" href="accueil.css" />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <img src="../assets/images/logo.png" alt="logo" class="logo" />
-      </header>
-      <main>
-        <section class="img">
-          <img
-            src="../assets/images/StockPhotoLadyComputer.jpg"
-            alt="photolady"
-            class="photolady"
-          />
-
-          <img
-            src="../photosaccueil/pexels-imperioame-15835598.jpg"
-            alt="ladylaugh"
-            class="ladylaugh"
-          />
-
-          <img
-            src="../photosaccueil/pexels-mart-production-7606074.jpg"
-            alt="ladylaugh2"
-            class="ladylaugh2"
-          />
-
-          <img
-            src="../photosaccueil/pexels-bertellifotografia-17767244.jpg"
-            alt="ladycomp"
-            class="ladycomp"
-          />
-        </section>
-
-        <section class="button">
-          <form class="user-form">
-            <label for="user-name">Nom d'utilisateur : </label>
-            <input type="text" id="user-name" />
-            <label for="user-password">Mot de passe : </label>
-            <input type="password" id="user-password" />
-
-            <h2><i> *Mot de passe oublié ? </i></h2>
-          </form>
-
-          <button class="connection">Se connecter</button>
-
-          <div class="membre">
-            <h1><i> Pas encore membre ? </i></h1>
-            <button>Rejoins-nous !</button>
-          </div>
-        </section>
-      </main>
-      <div class="footer-espace"></div>
-      <footer>
-        <h2><i> @ copyright Neo-Dev app </i></h2>
-      </footer>
+    <div class="popup-container">
+      <div class="overlay modal-trigger"></div>
+      <div class="popup">
+        <h3>Pas encore de compte ?</h3>
+        <p>Clique sur le bouton "rejoins-nous" pour créer ton compte !</p>
+        <a href="/" class="popuplink">Rejoins-nous</a>
+        <div>
+          <a href="javascript:void(0)" class="popupexit modal-trigger">X</a>
+        </div>
+      </div>
     </div>
+
+    <header>
+      <img src="../assets/images/logo.png" alt="logo" class="logo" />
+    </header>
+    <main>
+      <section class="img">
+        <img
+          src="../assets/images/StockPhotoLadyComputer.jpg"
+          alt="photolady"
+          class="photos"
+        />
+
+        <img
+          src="../photosaccueil/pexels-imperioame-15835598.jpg"
+          alt="ladylaugh"
+          class="photos"
+        />
+
+        <img
+          src="../photosaccueil/pexels-mart-production-7606074.jpg"
+          alt="ladylaugh2"
+          class="photos"
+        />
+
+        <img
+          src="../photosaccueil/pexels-bertellifotografia-17767244.jpg"
+          alt="ladycomp"
+          class="photos"
+        />
+      </section>
+
+      <section class="button">
+        <form class="user-form">
+          <label for="user-name">Nom d'utilisateur : </label>
+          <input type="text" id="user-name" />
+          <label for="user-password">Mot de passe : </label>
+          <input type="password" id="user-password" />
+
+          <h2><i> *Mot de passe oublié ? </i></h2>
+        </form>
+
+        <button class="connection modal-trigger">Se connecter</button>
+
+        <div class="membre">
+          <h1><i> Pas encore membre ? </i></h1>
+          <button class="inscription">Rejoins-nous !</button>
+        </div>
+      </section>
+    </main>
+    <div class="footer-espace"></div>
+    <footer>
+      <h2><i> @ copyright Neo-Dev app </i></h2>
+    </footer>
+    <script src="/assets/js/accueil.js"></script>
   </body>
 </html>
