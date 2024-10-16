@@ -191,7 +191,10 @@ form > button {
 
 /* Media Queries */
 @media screen and (min-width: 400px) and (max-width: 999px) {
-	/* Code here */
+	main {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 @media screen and (min-width: 1000px) {
