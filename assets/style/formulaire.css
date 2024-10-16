@@ -50,6 +50,7 @@ h1 {
 	background-color: #d3b0aa;
 	border-radius: 94px;
 	padding: 54px;
+	margin-right: 64px;
 }
 
 .picture-icon {
@@ -137,6 +138,19 @@ input {
 	align-items: flex-end;
 	gap: 15%;
 	flex-direction: column;
+}
+
+#section-2 > form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 16px;
+	gap: 16px;
+}
+
+#section-2 {
+	align-items: flex-start;
 }
 
 #language {
