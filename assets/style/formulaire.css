@@ -62,8 +62,6 @@ p {
 	padding-right: 32px;
 }
 
-/* Main */
-
 /* Popup */
 .pop-up {
 	background-color: #ba786d;
@@ -85,7 +83,9 @@ p {
 	width: 25%;
 	text-decoration: none;
 }
-/* Pop-up section to add --> check the style with Naima */
+/* Pop-up */
+
+/* Main */
 
 main {
 	display: flex;
