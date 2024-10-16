@@ -18,7 +18,6 @@
 
 body {
 	margin: 0;
-	flex-wrap: wrap;
 	font-family: "Montserrat", sans-serif;
 }
 
@@ -89,12 +88,6 @@ p {
 
 main {
 	display: flex;
-	justify-content: center;
-}
-
-h2 {
-	margin: 16px;
-	padding-bottom: 16px;
 }
 
 #section-1,
@@ -103,25 +96,29 @@ h2 {
 	height: 500px;
 }
 
+h2 {
+	align-self: center;
+	margin: 16px;
+	padding-bottom: 16px;
+}
+
 #section-1 {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: flex-start;
 }
 
-#section-2 {
-	justify-content: center;
-}
-
-#section-1 > label {
-	padding: 32px;
-}
-
-input {
+#section-1 > form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 	margin: 16px;
+	gap: 32px;
 }
 
-.titre-champs {
-	width: 139px;
+.titre-champ {
+	margin-right: 32px;
 }
 
 /* Footer */
