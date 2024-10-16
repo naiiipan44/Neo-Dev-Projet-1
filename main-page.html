@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Neo-Dev | Home Page </title>
     <link href="/assets/style/main-page.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,12 +42,14 @@
           />
         </div>
         <div id="reseau-profil-div">
-          <img
-            src="assets/images/bouton-réseaux.png"
-            class="general-icons"
-            alt="to go to reseau page"
-            id="top-layout-reseaux"
-          />
+          <a href="pages/reseau.html" alt="go to reseau page">
+            <img
+              src="assets/images/bouton-réseaux.png"
+              class="general-icons"
+              alt="to go to reseau page"
+              id="top-layout-reseaux"
+            />
+          </a>
           <img
             src="assets/images/profil.png"
             class="general-icons"
@@ -95,12 +97,15 @@
       </div>
       <section id="post-container">
         <div class="profil-layout">
-          <img src="assets/images/profil.png" class="general-icons" />
-          <h2>Lucie - Capgemini - Nantes</h2>
+          <a href="https://www.capgemini.com/fr-fr/" alt="towards capgimini site" target="_blank" class="link-to">
+            <img src="assets/images/profil.png" class="general-icons" />
+          </a>
+          <h2>Lucie - <a href="https://www.capgemini.com/fr-fr/" alt="towards capgimini site" target="_blank" class="link-to">
+            <em>CapGemini</em> </a> - Nantes</h2>
         </div>
         <h4>Un nouveau Meet'Up pour la communauté Nantaise !</h4>
-        <p>Rendez-vous à la Cité des Congrés (Grand Auditorium) pour découvrir les nouveautés en matière de framework JS et 
-          les projets portés par les collaborateurs de CapGemini en partenariat avec la Région et Naolib
+        <p>Rendez-vous à <strong>la Cité des Congrés (Grand Auditorium)</strong> pour découvrir les nouveautés en matière de framework JS et 
+          les projets portés par les collaborateurs de <strong>CapGemini</strong> en partenariat avec la Région et Naolib
         </p>
         <p>Infos sur l'événements : ............</p>
         <div class="comment-layout">
@@ -143,12 +148,16 @@
           </div>
           <form id="commentary-section">
             <label for="comment"></label>
-            <textarea id="comment" rows="4" placeholder="Add a comment">
+            <textarea id="comment" rows="4" placeholder="Ajouter un commentaire">
             </textarea>
           </form>
           <div class="profil-layout">
-            <img src="assets/images/profil.png" class="general-icons" />
-            <h2>John - Ancien Wilder - Nantes</h2>
+            <a href="https://www.sofia.dev/" alt="towards sofia dev site" target="_blank">
+              <img src="assets/images/profil.png" class="general-icons" />
+            </a>
+            <h2>John - <a href="https://www.sofia.dev/" alt="towards sofia dev site" target="_blank" class="link-to">
+              <em>Sofia Development</em>
+            </a> - Nantes</h2>
           </div>
             <h4>Actuellement en poste chez Sofia Development et à la recherche d'un·e développeur Junior de la Wild !</h4>
             <p>Afin de démocratiser la gestion des consultations et la génération de facture sur IOS et smartphone pour aider le travail
@@ -188,7 +197,7 @@
         </div>
         <form id="commentary-section">
           <label for="comment"></label>
-          <textarea id="comment" rows="4" placeholder="Add a comment">
+          <textarea id="comment" rows="4" placeholder="Ajouter un commentaire">
           </textarea>
         </form>
         <div class="profil-layout" id="edit-profil">
@@ -202,7 +211,6 @@
           <img
             src="assets/images/messagerie.png"
             alt="messagerie"
-            class="general-icons"
           />
           <p>Messagerie</p>
         </div>

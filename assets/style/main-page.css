@@ -34,7 +34,7 @@ h3, h4 {
 p {
   font-size: 12px;
   margin:0;
-  padding : 8px 2px;
+  padding : 8px 2px 8px 5px;
 }
 
 h4 {
@@ -93,6 +93,10 @@ h4 {
   font-weight: bolder;
 }
 
+.link-to:hover {
+  font-weight: bolder;
+} 
+
 .logo {
   width: 16vw;
   height: auto;
@@ -107,6 +111,7 @@ h1 {
   font-family: "Monoton", sans-serif;
   font-weight: 100;
   margin: 0 0 5px 10px;
+  word-spacing: 10px;
 }
 
 #reseau-profil-div {
@@ -153,9 +158,9 @@ nav > a {
 
 /* Profil menu */
 
-#post-container {
+/* #post-container {
   scroll-behavior: smooth;
-}
+} */
 
 #profil-menu,
 #button-add {
@@ -175,6 +180,9 @@ nav > a {
 #post-container {
   margin: 10px 0 0 0;
   width: 100%;
+  border-style: solid;
+  border-width: 0 1px;
+  border-color: grey;
 }
 
 .general-icons {
@@ -217,7 +225,7 @@ h2 {
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
-  padding: 10px 0;
+  padding: 10px 0 10px 5px;
   background-color: var(--layout-color);
   border-style: solid;
   border-width: 1px 0;
@@ -298,6 +306,11 @@ h3 {
   margin: 0 20px;
   height: 10%;
   background-color: var(--main-content-color);
+}
+
+#bloc-messagerie img{
+  width: auto;
+  height: 26px;
 }
 
 #message-overlay > p {
