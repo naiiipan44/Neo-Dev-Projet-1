@@ -71,6 +71,8 @@ const buttonSound = document.getElementById("sound-toggle");
 // const imgSound = document.getElementById("logo-sound")
 let isSound = false;
 
+ambianceSound.pause();
+
 buttonSound.addEventListener("click", () => {
   if (!isSound) {
     ambianceSound.play();
