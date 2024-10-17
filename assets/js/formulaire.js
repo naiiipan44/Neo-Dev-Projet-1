@@ -7,18 +7,21 @@ const userFormTable = {
   currentFormation: "",
   linkedInLink: "",
   gitHubLink: "",
-  langages: [""],
-  profilType: "",
+  // langages: [""],
+  // profilType: "",
 };
 
-// Incremented code language list
-
+// Incremented language list 
+// Extract the plus icon button on HTML
 const addButton = document.getElementById("add-button");
+// Extract the text input field, where user will type
 const inputLanguage = document.querySelector("#language-input");
+// Extract the ul in which we will inject the li input 
 const languageList = document.querySelector("#language-list");
-console.log(languageList);
-// Onsubmit we will run a function
+
+// Event occurring each time the userd hit the plus icon button
 addButton.addEventListener("click", (event) => {
+  // avoid page refreshment
   event.preventDefault();
   // We create a variable that we set to a new li node
   const newLanguage = document.createElement("li");
@@ -29,7 +32,7 @@ addButton.addEventListener("click", (event) => {
   // We clear the value of the input
   inputLanguage.value = "";
 });
-//////////////////////////
+
 
 // Extract the button that user will click on to validate his form
 const validationButton = document.querySelector(".submit-button");
@@ -58,23 +61,43 @@ validationButton.addEventListener("click", (event) => {
   userFormTable.linkedInLink = userLinkedIn.value;
   userFormTable.gitHubLink = userGithub.value;
 
-  // check that the userFormTable is well filled !
-  console.log(userFormTable);
-
   // create a JSON fill to store userFormTable as strings
   const jsonUser = JSON.stringify(userFormTable);
   // add it to the local storage of the user session and refer it as "user"
   localStorage.setItem("user", jsonUser);
 
-  // extract the HTML pop-up div into the JS script
+  // Handle the popup display
   const popup = document.querySelector(".popup-container");
-  // change the CSS display property of the pop-up div to make it appear on the user screen
-  popup.style.display = "block";
-
   let phrasePopUp = document.createElement('h3');
   const popUpDiv = document.querySelector('.popup');
   
-  phrasePopUp.textContent=`Bravo ${userFormTable.name}, ton profil a été créé, clique ci-dessous pour le découvrir !`;
-  popUpDiv.appendChild(phrasePopUp);
+  // Starting material for loops above
+  let countIndex = 0;
+  const tableRandom=[];
+
+  // Fill tableRandom with userFormTable content --> in order to use table methods below
+  for (key in userFormTable) {
+    tableRandom.push(userFormTable[key]) ;
+  }
+
+  // Check if there are empty fields in the form. If it is the case, it break the loop and display the altert message so
+  // the user is forced to finish his form (for the section-1 aprt at least)
+  for (let i = 0; i < tableRandom.length; i++) {
+    if (tableRandom[i] != "" ) {
+      countIndex ++;
+      console.log(countIndex);
+    } else {
+      alert("Veuillez remplir tous les champs");
+      break;
+    }
+  }
+    
+  // Check if the previous loop count is equal to the actual length of the table. If not, the popup is not displayed
+    if (tableRandom.length === countIndex) {
+      console.log(tableRandom.length)
+      phrasePopUp.textContent=`Bravo ${userFormTable.name}, ton profil a été créé, clique ci-dessous pour le découvrir !`;
+      popUpDiv.appendChild(phrasePopUp);
+      popup.style.display = "block";
+    }
 });
 
