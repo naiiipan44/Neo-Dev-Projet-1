@@ -14,7 +14,41 @@
         id="logo"
         class="clickable"
       /></a>
-      <h2 class="statut">je resaute</h2>
+      
+
+      <div id="search-bar-div">
+        <img
+          src="/assets/images/rechercher.png"
+          class="general-icons"
+          alt="search logo"
+        />
+        <a></a>
+        <input
+          type="text"
+          id="search-bar"
+          name="search-bar"
+          placeholder="Taper votre recherche ici !"
+        />
+      </div>
+      
+      <div><h2 class="statut">je resaute</h2></div>
+
+      <div id="reseau-profil-div">
+        <a href="/pages/reseau.html" alt="go to reseau page">
+          <img
+            src="/assets/images/bouton-réseaux.png"
+            class="general-icons"
+            alt="to go to reseau page"
+            id="top-layout-reseaux"
+          />
+        </a>
+        <img
+          src="/assets/images/profil.png"
+          class="general-icons"
+          alt="go to profil page"
+          id="top-layout-profil"
+        />
+      </div>
       <img
         src="/assets/images/son-off.png"
         alt="toggle sound on/off"
@@ -27,11 +61,24 @@
     </header>
 
     <main>
+      <section id="explainBox">
+        <p id="explanation" class="explanation">
+          Construisez votre reseau ! <br>
+          Parcourir les profils de vos confreres et ceux qui les embauchent pour developper une famille de connaissances utile.<br>
+          Dès que vous voyez un profil qui vous plaise, cliquer sur l'emoji correspondante pour montrer votre affection et pour etre mis en relation avec votre nouvelle futur ami(e)(s). <br>
+          Si vous preferez chercher plus loin avant de vous confier, indiquez que vous n'etes pas encore pret(e) d'etre mis en relation.
+        </p>
+        <button type="button" class = "clickable" id="expButton">montrer/cacher</button>
+      </section>
 
       <section>
         <img src="/assets/images/emoji-kiss-fill-pink.svg" class="liked" id="liked-image">
       </section>
-      
+
+      <section>
+        <img src="/assets/images/emoji-grimace-fill-pink.svg" class="liked" id="disliked-image">
+      </section>
+
       <section id="images-of-projects" class="clickable"></section>
       <section id="profile-w-buttons">
         <article id="like-dislike-buttons">
