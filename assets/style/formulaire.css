@@ -238,17 +238,12 @@ footer > p {
 }
 
 /* Media Queries */
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 410px) and (max-width: 600px) {
 	/* Code here */
-
-	*{
-		flex-wrap: wrap;
-	}
-
 	header {
 		display: flex;
-		justify-content: space-around;
-		align-items: center;
+		flex-direction: column;
+		justify-content: flex-start;
 	}
 
 	.logo-neo-dev {
@@ -277,9 +272,7 @@ footer > p {
 	}
 
 #section-1 > form {
-	display: grid;
-grid-template-columns: auto;
-	width: 30%;
+	width: 40vh;
 	margin: 16px;
 	padding-left: 8px;
 	padding-right: 8px;
@@ -292,8 +285,6 @@ h2 {
 }
 
 #section-2 > form, fieldset {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
 	margin: auto;
 }
 
