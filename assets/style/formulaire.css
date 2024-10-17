@@ -238,9 +238,71 @@ footer > p {
 }
 
 /* Media Queries */
-@media screen and (min-width: 320px) and (max-width: 414px) {
+@media screen and (max-width: 600px) {
 	/* Code here */
+
+	*{
+		flex-wrap: wrap;
+	}
+
+	header {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.logo-neo-dev {
+		width: 64px;
+		height: fit-content;
+	}
+
+	
+	.picture-icon {
+		width: px;
+	}
+	
+	h1 {
+	display: none;
+	}
+
+	.picture-upload-section {
+		background-color: #d3b0aa;
+		border-radius: 94px;
+		padding: 54px;
+		margin: auto;
+	}
+
+	p {
+		display: none;
+	}
+
+#section-1 > form {
+	display: grid;
+grid-template-columns: auto;
+	width: 30%;
+	margin: 16px;
+	padding-left: 8px;
+	padding-right: 8px;
+	gap: 8px;
+	position: absolute;
 }
+
+h2 {
+	display: none;
+}
+
+#section-2 > form, fieldset {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: auto;
+}
+
+/* fieldset {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+} */
+
 @media screen and (min-width: 1000px) {
 	/* Code here */
 }
