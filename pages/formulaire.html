@@ -59,39 +59,39 @@
 
        <!-- Formulaire d'inscription -->
       <div id="section-1">
-        <form>
+        <form id="form-section-1">
           <h2>Vos informations</h2>
           <div id="user-name-box" class="user-box">
-            <label class="titre-champ" for="user-name"><strong>Nom d'utilisateur</strong></label>
+            <label class="titre-champ" for="user-name"><div class="text-field">Nom d'utilisateur</div></label>
             <input  type="text" id="user-name" required/>
           </div>
           
           <div class="user-box">
-            <label class="titre-champ" for="user-password"><strong>Mot de passe</strong></label>
+            <label class="titre-champ" for="user-password"><div class="text-field">Mot de passe</div></label>
             <input  type="password" id="user-password" required/>
           </div>
           
           <div class="user-box">
-            <label class="titre-champ" for="user-mail"><strong>Email</strong></label>
+            <label class="titre-champ" for="user-mail"><div class="text-field">Email</div></label>
             <input  type="email" id="user-mail" required/>
           </div>
     
           <div class="user-box">
-            <label class="titre-champ" for="user-current-city"><strong>Ville</strong></label>
+            <label class="titre-champ" for="user-current-city"><div class="text-field">Ville</div></label>
             <input  type="text" id="user-current-city" required/>
           </div>
     
           <div class="user-box">
-            <label class="titre-champ" for="user-current-formation"><strong>Formation</strong></label>
+            <label class="titre-champ" for="user-current-formation"><div class="text-field">Formation</div></label>
             <input  type="text" id="user-current-formation" required/>
           </div>
     
           <div class="user-box">
-            <label class="titre-champ" for="user-linkedin"><strong>LinkedIn</strong></label>
+            <label class="titre-champ" for="user-linkedin"><div class="text-field">LinkedIn</div></label>
             <input  type="text" id="user-linkedin" required/>
           </div>
           <div class="user-box">
-            <label class="titre-champ" for="user-github"><strong>GitHub</strong></label>
+            <label class="titre-champ" for="user-github"><div class="text-field">GitHub</div></label>
             <input  type="text" id="user-github" required/>
           </div>
         </form>
@@ -115,7 +115,6 @@
           <ul id="language-list">
           </ul>
         </div> 
-
         <!-- Profil de l'utilisateur -->
         <form>
           <fieldset>
@@ -127,7 +126,6 @@
               value="recruteur"
               required
             />
-            
             <label for="en-recherche">En recherche</label>
             <input
               type="radio"
@@ -135,7 +133,6 @@
               name="profil-status"
               value="en-recherche"
             />
-            
             <label for="Classique">Non-renseignée</label>
             <input
               type="radio"
@@ -144,7 +141,6 @@
               value="not-filled"
             />
           </fieldset>
-
           <!-- Bouton valider l'inscription-->
           <button type="submit" class="submit-button">
             Valider mon inscription

@@ -159,10 +159,22 @@ input {
 	align-items: flex-start;
 	margin: 16px;
 	gap: 32px;
+	
+}
+
+.user-box{
+	display: flex;
+	align-items: center;
+}
+
+.text-field {
+	width: 150px;
+	height: 20px;
+	text-align: right;
 }
 
 .titre-champ {
-	margin-right: 32px;
+	margin-right: 32px;	
 }
 
 #section-1 > label {
@@ -190,11 +202,6 @@ input {
 	align-items: center;
 	flex-wrap: wrap;
 	margin-left: 20px;
-}
-
-#section-2 {
-	display: flex;
-	align-items: center;
 }
 
 #language {
@@ -258,18 +265,18 @@ footer > p {
 }
 
 /* Media Queries */
-@media screen and (min-width: 410px) and (max-width: 600px) {
+@media screen and (max-width: 600px) {
 	/* Code here */
-	header {
+	/* header {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
-	}
+	} */
 
-	.logo-neo-dev {
+	/* .logo-neo-dev {
 		width: 64px;
 		height: fit-content;
-	}
+	} */
 
 	
 	.picture-icon {
@@ -291,7 +298,36 @@ footer > p {
 		display: none;
 	}
 
-	#section-1 > form {
+	main {
+		display: block;
+	}
+
+	#section-1{
+		width:100%;
+		padding-right: 100px;
+		height: 50%;
+	}
+
+	#section-2{
+		display: block;
+		width:100%;
+		margin:0;
+	}
+
+	.picture-upload-section{
+		margin: 0 10px 0 0;
+	}
+
+	#plus-button {
+		width:300px;
+		margin:0;
+	}
+
+	#language {
+		margin: 10px 0 10px 50px;;
+	}
+
+	/* #section-1 > form {
 		display: grid;
 		grid-template-columns: auto;
 		width: 30%;
@@ -300,25 +336,64 @@ footer > p {
 		padding-right: 8px;
 		gap: 8px;
 		position: absolute;
-	}
+	} */
 
 	h2 {
 		display: none;
 	}
 
-	#section-2 > form, fieldset {
+	/* #section-2 > form, fieldset {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		margin: auto;
-	}
-
+	}  */
+}
 	/* fieldset {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	} */
-}
+/* }*/
 
-@media screen and (min-width: 1000px) {
-	/* Code here */
-}
+/* @media screen and (min-width: 650px) {
+	main {
+		display: block;
+		gap:50px;
+	}
+	
+	#section-1{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	#section-2{
+		margin:100px 0 0 0;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	#language {
+		margin: 0 0 0 120px;
+	}
+};
+
+@media screen and (min-width: 950px) {
+	.user-box{
+		display: block;
+
+	}
+
+	#form-section-1{
+		display: block;
+	}
+
+	.text-field{
+		text-align: left;
+	}
+
+	#section-2{
+		margin:0;
+	}
+} */
