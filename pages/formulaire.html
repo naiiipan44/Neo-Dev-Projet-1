@@ -23,12 +23,14 @@
 
     <!--Menu haut-->
     <header>
-      <img
-        class="logo-neo-dev"
-        src="../assets/images/logo.png"
-        alt="Ceci est le logo de Neo Dev"
-        title="Logo Neo Dev"
-      />
+      <a href="accueil.html" rel="go towards accueil">
+        <img
+          class="logo-neo-dev"
+          src="../assets/images/logo.png"
+          alt="Ceci est le logo de Neo Dev"
+          title="Logo Neo Dev"
+        />
+      </a>
       <h1>Créez votre profil</h1>
 
       <section class="picture-upload-section">
@@ -61,85 +63,85 @@
           <h2>Vos informations</h2>
           <div id="user-name-box" class="user-box">
             <label class="titre-champ" for="user-name"><strong>Nom d'utilisateur</strong></label>
-            <input  type="text" id="user-name" />
+            <input  type="text" id="user-name" required/>
           </div>
           
           <div class="user-box">
             <label class="titre-champ" for="user-password"><strong>Mot de passe</strong></label>
-            <input  type="password" id="user-password" />
+            <input  type="password" id="user-password" required/>
           </div>
           
           <div class="user-box">
             <label class="titre-champ" for="user-mail"><strong>Email</strong></label>
-            <input  type="email" id="user-mail" />
+            <input  type="email" id="user-mail" required/>
           </div>
     
           <div class="user-box">
             <label class="titre-champ" for="user-current-city"><strong>Ville</strong></label>
-            <input  type="text" id="user-current-city" />
+            <input  type="text" id="user-current-city" required/>
           </div>
     
           <div class="user-box">
             <label class="titre-champ" for="user-current-formation"><strong>Formation</strong></label>
-            <input  type="text" id="user-current-formation" />
+            <input  type="text" id="user-current-formation" required/>
           </div>
     
           <div class="user-box">
             <label class="titre-champ" for="user-linkedin"><strong>LinkedIn</strong></label>
-            <input  type="text" id="user-linkedin" />
+            <input  type="text" id="user-linkedin" required/>
           </div>
           <div class="user-box">
             <label class="titre-champ" for="user-github"><strong>GitHub</strong></label>
-            <input  type="text" id="user-github" />
+            <input  type="text" id="user-github" required/>
           </div>
         </form>
       </div>
       
       <div id="section-2">
         <div id="language">
-          <form id="form" onkeydown="return event.key != 'Enter';">
-            <label for="todo">Langages</label>
+          <form id="plus-button" onkeydown="return event.key != 'Enter';">
+            <label for="todo"><strong>Langages</strong></label>
             <input
             type="text"
             name="todo"
-            placeholder="Javascript"
-            id="todoInput"
+            placeholder="Ajouter vos langages favoris !"
+            id="language-input"
             value=""
+            size="30"
             />
-            <button id="addButton">+</button>
-            <ul id="language-list">
-            </ul>
-            
-          <p><strong>Language</strong></p>
-          <p>&#128050;Javascript</p>
-          <img class="plus-circle-icon" src="../assets/images/plus-circle-icon.png" alt="Ceci est le bouton d'ajout de languages" title="Bouton language"/>
-        </div>
+            <a ><img id="add-button" class="plus-circle-icon" src="../assets/images/plus-circle-icon.png" alt="Ceci est le bouton d'ajout de languages" title="Bouton language"/>
+            </a>
+          <ul id="language-list">
+          </ul>
+        </div> 
 
         <!-- Profil de l'utilisateur -->
         <form>
           <fieldset>
             <legend>Votre profil</legend>
-            <input
+            <label for="recruteur">Recruteur</label><input
               type="radio"
               id="recruteur"
               name="profil-status"
               value="recruteur"
+              required
             />
-            <label for="recruteur">Recruteur</label>
+            
+            <label for="en-recherche">En recherche</label>
             <input
               type="radio"
               id="en-recherche"
               name="profil-status"
               value="en-recherche"
             />
-            <label for="en-recherche">En recherche</label>
+            
+            <label for="Classique">Non-renseignée</label>
             <input
               type="radio"
               id="not-filled"
               name="profil-status"
               value="not-filled"
             />
-            <label for="Classique">Non-renseignée</label>
           </fieldset>
 
           <!-- Bouton valider l'inscription-->
@@ -156,6 +158,6 @@
       <p>©Copyright Neo-Dev app</p>
     </footer>
 
-    <script src="/assets/js/formulaire.js"></script>
+    <script src="../assets/js/formulaire.js"></script>
   </body>
 </html>

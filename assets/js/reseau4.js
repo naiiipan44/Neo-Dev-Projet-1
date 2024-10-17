@@ -1,10 +1,7 @@
 // image variables
+const previewImages = document.getElementById("images-of-projects");
+const slide1 = 'url("/assets/images/emoji-grimace-fill-pink.svg")';
 
-const previewImages = document.getElementById("images-of-projects")
-const slide1 = 'url("/assets/images/NinonScreen1.png")';
-const slide2 = 'url("/assets/images/NinonScreen2.png")';
-const slide3 = 'url("/assets/images/NinonScreen3.png")';
-const likedAnimation = document.getElementById("liked-image");
 
 // form variables
 const retrieveUser = localStorage.getItem("user");
@@ -20,46 +17,31 @@ const hideButton = document.getElementById("hide-button")
 const profileText = document.querySelector("#about-me")
 
 
-//image carouselx
+//image carousel
 previewImages.style.backgroundImage = slide1;
 
 previewImages.addEventListener("click", function () {
-  console.log(slide1);
-  console.log(previewImages.style.backgroundImage);
-  if (previewImages.style.backgroundImage == slide1) {
-    console.log("B");
-    previewImages.style.backgroundImage = slide2
-  } else if (previewImages.style.backgroundImage == slide2) {
-    previewImages.style.backgroundImage = slide3
-  } else if (previewImages.style.backgroundImage == slide3) {
-    previewImages.style.backgroundImage = slide1
-  } else {
-    previewImages.backgroundImage = slide1
-  }
+  setTimeout(function () {
+    window.location.href = "/main-page.html";
+  }, 1000)
 });
 
 //like/dislike button behaviours
-likeButton.addEventListener("click", function () {
-  console.log("works");
-  likeButton.src = "/assets/images/likeGreenSvg.svg"
-  likedAnimation.classList.add('transition-liked')
-  // setTimeout(function () {
-  //   window.location.href = "/pages/reseau3.html";
-  // }, 1000)
+// likeButton.addEventListener("click", function () {
+//   console.log("works");
+//   likeButton.src = "/assets/images/likeGreenSvg.svg"
+//   setTimeout(function () {
+//     window.location.href = "/main-page.html";
+//   }, 1000)
+// })
 
-  // transition test: 
-  //   likedAnimation.style.display = "block"
-  // likedAnimation.style.opacity = "1"
-  // likedAnimation.style.transition = "900ms"
-})
-
-dislikeButton.addEventListener("click", function () {
-  console.log("works also")
-  dislikeButton.src = "/assets/images/dislikeBlueSvg.svg"
-  setTimeout(function () {
-    window.location.href = "/pages/reseau3.html";
-  }, 1000)
-})
+// dislikeButton.addEventListener("click", function () {
+//   console.log("works also")
+//   dislikeButton.src = "/assets/images/dislikeBlueSvg.svg"
+//   setTimeout(function () {
+//     window.location.href = "/main-page.html";
+//   }, 1000)
+// })
 
 //hide button
 hideButton.addEventListener("click", function () {

@@ -36,15 +36,19 @@ previewImages.addEventListener("click", function () {
 
 //like/dislike button behaviours
 likeButton.addEventListener("click", function () {
-  // if (likeButton.src == "/assets/images/emoji-kiss-fill-pink.svg") {
   console.log("works");
   likeButton.src = "/assets/images/likeGreenSvg.svg"
-  // } else { likeButton.src = "/assets/images/emoji-kiss-fill-pink.svg" }
+  setTimeout(function () {
+    window.location.href = "/pages/reseau4.html";
+  }, 1000)
 })
 
 dislikeButton.addEventListener("click", function () {
   console.log("works also")
   dislikeButton.src = "/assets/images/dislikeBlueSvg.svg"
+  setTimeout(function () {
+    window.location.href = "/pages/reseau4.html";
+  }, 1000)
 })
 
 //hide button
@@ -64,6 +68,8 @@ const ambianceSound = document.getElementById("background-sound");
 const buttonSound = document.getElementById("sound-toggle");
 // const imgSound = document.getElementById("logo-sound")
 let isSound = false;
+
+ambianceSound.pause();
 
 buttonSound.addEventListener("click", () => {
   if (!isSound) {
