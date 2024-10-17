@@ -7,8 +7,6 @@ const userFormTable = {
   currentFormation: "",
   linkedInLink: "",
   gitHubLink: "",
-  // langages: [""],
-  // profilType: "",
 };
 
 // Incremented language list 
@@ -18,20 +16,31 @@ const addButton = document.getElementById("add-button");
 const inputLanguage = document.querySelector("#language-input");
 // Extract the ul in which we will inject the li input 
 const languageList = document.querySelector("#language-list");
-
+let indexList = 0;
 // Event occurring each time the userd hit the plus icon button
+
 addButton.addEventListener("click", (event) => {
   // avoid page refreshment
   event.preventDefault();
   // We create a variable that we set to a new li node
-  const newLanguage = document.createElement("li");
-  // We add the text to the li
-  newLanguage.innerHTML = inputLanguage.value;
-  // We add the li to the ul 
-  languageList.appendChild(newLanguage);
-  // We clear the value of the input
-  inputLanguage.value = "";
+  addIndex();
+  console.log(indexList)
 });
+
+function addIndex() {
+  indexList++;
+  if (indexList <=5) {
+    console.log(indexList)
+    const newLanguage = document.createElement("li");
+    // We add the text to the li
+    newLanguage.innerHTML = inputLanguage.value;
+    // We add the li to the ul 
+    languageList.appendChild(newLanguage);
+    // We clear the value of the input
+    inputLanguage.value = "";
+  }
+}
+
 
 
 // Extract the button that user will click on to validate his form

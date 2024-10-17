@@ -171,9 +171,7 @@ input {
 
 #section-2 {
 	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	gap: 15%;
+	justify-content: space-around;
 	flex-direction: column;
 	margin-left: 82px;
 }
@@ -184,7 +182,6 @@ input {
 	justify-content: flex-start;
 	align-items: center;
 	margin: 16px;
-	margin-top: 138px;
 	gap: 16px;
 }
 
@@ -192,16 +189,18 @@ input {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
+	margin-left: 20px;
 }
 
 #section-2 {
-	align-items: flex;
+	display: flex;
+	align-items: center;
 }
 
 #language {
 	display: flex;
+	flex-direction: column;
 	align-self: flex-start;
-	margin-top: 34px;
 }
 
 .plus-circle-icon {
@@ -210,6 +209,10 @@ input {
 
 .plus-circle-icon:hover{
 	height: 30px;
+}
+
+#language-list {
+	height : 100px;
 }
 
 fieldset {
@@ -293,32 +296,33 @@ footer > p {
 		display: none;
 	}
 
-#section-1 > form {
-	display: grid;
-grid-template-columns: auto;
-	width: 30%;
-	margin: 16px;
-	padding-left: 8px;
-	padding-right: 8px;
-	gap: 8px;
-	position: absolute;
-}
+	#section-1 > form {
+		display: grid;
+		grid-template-columns: auto;
+		width: 30%;
+		margin: 16px;
+		padding-left: 8px;
+		padding-right: 8px;
+		gap: 8px;
+		position: absolute;
+	}
 
-h2 {
-	display: none;
-}
+	h2 {
+		display: none;
+	}
 
-#section-2 > form, fieldset {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	margin: auto;
-}
+	#section-2 > form, fieldset {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin: auto;
+	}
 
-/* fieldset {
+	/* fieldset {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-} */
+	} */
+}
 
 @media screen and (min-width: 1000px) {
 	/* Code here */
