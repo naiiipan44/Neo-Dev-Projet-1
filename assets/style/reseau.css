@@ -25,13 +25,26 @@ body {
   font-family: var(--main-font-style);
 }
 
+#sound-logout-buttons {
+  display: flex;
+  align-items: center;
+  margin-right: 1vw;
+} 
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
 p {
   margin: 0;
 }
 /* Header */
 
 #logo {
-  max-width: 12vw;
+  max-width: 9.5vw;
+
 }
 
 #logo:hover {
@@ -41,7 +54,6 @@ p {
 
 #sound-toggle {
   width: 40px;
-  max-height: 5vw;
   margin-right: 1vw;
 }
 /* can we use a border instead of a size change? It's a little easier on the eyes */
@@ -55,7 +67,10 @@ p {
   }
 
   #reseau-profil-div {
-    gap:15px;
+    display: flex;
+    gap:30px;
+    margin-left: 15vw;
+
   }
 
   #search-bar-div{
@@ -68,14 +83,18 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 0px;
   width: 100%;
   gap:10px;
 }
 
 h2 {
   font-family: var(--title-font-style);
-  margin-right: 6vw;
+  margin-left: 4vw;
+}
+
+input {
+  border: none;
 }
 
 /* main */
@@ -278,6 +297,14 @@ article > div > img {
 
 /* Media Queries */
 @media screen and (min-width: 300px) and (max-width: 999px) {
+  #reseau-profil-div{
+display:none;
+  }
+
+  #search-bar {
+    display: none;
+  }
+
   #like {
     position: absolute;
     right: 10vw;
@@ -312,9 +339,7 @@ article > div > img {
   }
 }
 
-#sound-toggle {
-  width: 5vw;
-  max-height: 6vw;}
+
 
 @media screen and (min-width: 1000px) {
   /* Code here */
