@@ -40,7 +40,7 @@ p {
 }
 
 #sound-toggle {
-  width: 3vw;
+  width: 40px;
   max-height: 5vw;
   margin-right: 1vw;
 }
@@ -49,18 +49,72 @@ p {
     border: #ba786d solid 3px;
     border-radius: 50%;
   }
+  .general-icons {
+    width: auto;
+    height: 26px;
+  }
 
+  #reseau-profil-div {
+    gap:15px;
+  }
+
+  #search-bar-div{
+    display:flex;
+    align-content: center;
+  
+  }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
+  width: 100%;
+  gap:10px;
 }
 
 h2 {
   font-family: var(--title-font-style);
   margin-right: 6vw;
 }
+
+/* main */
+.explanation {
+  font-family: var(--main-font-style);
+  font-style: italic;
+  font-size: xx-small;
+  color: #ba786d;
+  text-align: center;
+  margin: 1vh 4vw 1vh 4vw;
+}
+#expButton {
+  background: none;
+  border: none;
+  font-family: var(--main-font-style);
+  font-style: italic;
+  font-weight: 900;
+  color: #ba786d;  
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  padding: 0;
+}
+
+#expButton:hover {
+  background-color: var(--button-background-color);
+  color: var(--main-background-color);
+  border-radius: 30px;
+  padding:1vh;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#explainBox {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Project previews */
 
 #images-of-projects, #images-of-projects2 {
@@ -86,14 +140,19 @@ h2 {
   opacity: 0;
 }
 
-.transition-liked {
+.transition {
 display: block;
 opacity: 1;
-
+animation: fadeIn 2s
 }
 
-.transition-disliked{
-
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Profile information */
@@ -109,7 +168,7 @@ article {
 
 h1 {
   background-color: var(--button-background-color);
-  max-width: 15vw;
+  max-width: 40vw;
   border: #ba786d solid 1px;
   border-radius: 30px;
   padding-left: 1vw;
@@ -238,6 +297,10 @@ article > div > img {
     max-height: 20vh;
     min-height: 5vh;
     font-size: x-small;
+  }
+
+  main>p {
+    display: none;
   }
 
   p {
