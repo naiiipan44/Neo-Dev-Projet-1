@@ -44,7 +44,7 @@ header {
 	height: fit-content;
 }
 
-.logo-neo-dev:hover{
+.logo-neo-dev:hover {
 	background-color: var(--button-background-color);
 	border-radius: 50%;
 }
@@ -62,7 +62,7 @@ h1 {
 	margin-right: 64px;
 }
 
-.picture-upload-section:hover{
+.picture-upload-section:hover {
 	border: solid 1px black;
 }
 
@@ -145,10 +145,9 @@ input {
 	align-items: flex-start;
 	margin: 16px;
 	gap: 32px;
-	
 }
 
-.user-box{
+.user-box {
 	display: flex;
 	align-items: center;
 }
@@ -160,7 +159,7 @@ input {
 }
 
 .titre-champ {
-	margin-right: 32px;	
+	margin-right: 32px;
 }
 
 #section-2 {
@@ -196,12 +195,12 @@ input {
 	height: 25px;
 }
 
-.plus-circle-icon:hover{
+.plus-circle-icon:hover {
 	height: 30px;
 }
 
 #language-list {
-	height : 100px;
+	height: 100px;
 }
 
 fieldset {
@@ -244,13 +243,13 @@ footer > p {
 	width: 100%;
 	margin-bottom: 0;
 	color: white;
-	margin : 0;
+	margin: 0;
 }
 
 /* Media Queries */
 @media screen and (min-width: 350px) {
 	/* Code here */
-	
+
 	footer > p {
 		display: block;
 	}
@@ -258,7 +257,7 @@ footer > p {
 	h1 {
 		display: none;
 	}
-	
+
 	.picture-upload-section {
 		background-color: #d3b0aa;
 		border-radius: 94px;
@@ -269,64 +268,63 @@ footer > p {
 	p {
 		display: none;
 	}
-	
+
 	main {
 		display: block;
 	}
 
-	#section-1{
-		width:100%;
+	#section-1 {
+		width: 100%;
 		height: 50%;
 	}
 
-	#form-section-1{
+	#form-section-1 {
 		display: flex;
 		align-items: center;
 		flex-direction: column;
 	}
 
-	.text-field{
+	.text-field {
 		text-align: center;
 		width: 100%;
 	}
-	
-	#section-2{
+
+	#section-2 {
 		display: block;
-		width:100%;
-		margin:0;
+		width: 100%;
+		margin: 0;
 	}
-	
-	.picture-upload-section{
+
+	.picture-upload-section {
 		margin: 0 10px 0 0;
 	}
-	
+
 	#plus-button {
-		width:300px;
+		width: 300px;
 	}
 
 	strong {
-		font-size: 18px;;
-	}
-	
-	#language {
-		margin: 10px 0 10px 0px;;
+		font-size: 18px;
 	}
 
-	.user-box{
+	#language {
+		margin: 10px 0 10px 0px;
+	}
+
+	.user-box {
 		display: flex;
 		flex-direction: column;
 	}
 
-	#plus-button{
+	#plus-button {
 		width: 100%;
-		margin:0;
+		margin: 0;
 		display: flex;
 		justify-content: center;
 	}
 
 	#language-list {
 		margin: 0;
-		
 	}
 
 	.dot-list {
@@ -337,28 +335,25 @@ footer > p {
 		margin-top: 20px;
 	}
 
-	#bottom-form{
+	#bottom-form {
 		display: flex;
 		align-items: center;
 	}
 
-	.submit-button{
+	.submit-button {
 		margin: 0;
 	}
 }
 
 @media screen and (min-width: 600px) {
-	
-
-
 	h1 {
-			display: block;
-			font-size:28px;
-			text-align: center;
+		display: block;
+		font-size: 28px;
+		text-align: center;
 	}
-	.user-box{
+	.user-box {
 		display: flex;
-		flex-direction:row;
+		flex-direction: row;
 		align-items: center;
 		justify-content: flex-end;
 		flex-wrap: wrap;
@@ -366,21 +361,18 @@ footer > p {
 
 	#language-list {
 		margin-left: 150px;
-		
 	}
 
-	.text-field{
+	.text-field {
 		width: 150px;
 	}
 
-	#section-1{
+	#section-1 {
 		margin-bottom: 20px;
 	}
-
 }
 
 @media screen and (min-width: 900px) {
-
 	.upload-text {
 		display: block;
 	}
@@ -388,11 +380,11 @@ footer > p {
 	main {
 		display: flex;
 		width: 100%;
-
 	}
 
-	#section-1, #section-2{
-		width:50%;
+	#section-1,
+	#section-2 {
+		width: 50%;
 	}
 
 	#section-2 {
@@ -403,8 +395,7 @@ footer > p {
 		margin-left: 50px;
 	}
 
-	h1{
+	h1 {
 		font-size: 32px;
 	}
-}	
-
+}

@@ -3,6 +3,7 @@
 const popupContainer = document.querySelector(".popup-container");
 const modalTriggers = document.querySelectorAll(".modal-trigger");
 
+
 modalTriggers.forEach(trigger => {
   trigger.addEventListener("click", toggleModal);
 });
@@ -10,6 +11,8 @@ modalTriggers.forEach(trigger => {
 function toggleModal() {
   popupContainer.classList.toggle("active");
 }
+
+
 
 const popupContainerMdp = document.querySelector(".popup-container-mdp");
 const mdpForgot = document.querySelectorAll(".mdp-forgot");
@@ -32,7 +35,7 @@ function closePopup() {
 
 
 
-const emoji = document.getElementById('floating-emoji');
+const emoji = document.getElementById("floating-emoji");
   
 function randomPosition(element) {
   const x = Math.random() * window.innerWidth;

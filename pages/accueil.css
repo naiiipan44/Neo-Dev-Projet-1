@@ -55,6 +55,18 @@ body {
   left: 50%;
   transform: translate(-50%, 50%);
   border-radius: 5px;
+  display: block;
+  opacity: 1;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .forgot-password-popup p {
@@ -123,6 +135,18 @@ body {
   left: 50%;
   transform: translate(-50%, 50%);
   border-radius: 5px;
+  display: block;
+  opacity: 1;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .popup p {
@@ -230,7 +254,7 @@ button {
   cursor: pointer;
 }
 .inscription:hover {
-  border: solid black 2px;
+  background-color: #eee2df;
 }
 
 h1 {
@@ -290,7 +314,7 @@ h1 {
   cursor: pointer;
 }
 .connection:hover {
-  border: solid #ba786d 2px;
+  background-color: #ba786d;
 }
 /*footer */
 
