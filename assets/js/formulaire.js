@@ -32,6 +32,7 @@ function addIndex() {
   if (indexList <=5) {
     console.log(indexList)
     const newLanguage = document.createElement("li");
+    newLanguage.classList.add("dot-list")
     // We add the text to the li
     newLanguage.innerHTML = inputLanguage.value;
     // We add the li to the ul 

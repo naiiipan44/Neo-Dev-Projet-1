@@ -35,6 +35,7 @@ body {
 header {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	padding: 16px;
 }
 
@@ -127,13 +128,8 @@ p {
 
 /* Main */
 
-main {
-	display: flex;
-}
-
 #section-1,
 #section-2 {
-	width: 40%;
 	height: 500px;
 }
 
@@ -141,16 +137,6 @@ h2 {
 	align-self: center;
 	margin: 16px;
 	padding-bottom: 16px;
-}
-
-#section-1 > form {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	padding: 0 15%;
-	padding-left: 0;
-	padding-right: 0;
-	margin: 16px;
 }
 
 input {
@@ -175,10 +161,6 @@ input {
 
 .titre-champ {
 	margin-right: 32px;	
-}
-
-#section-1 > label {
-	padding: 32px;
 }
 
 #section-2 {
@@ -251,42 +233,32 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 50px;
+	background-color: var(--button-background-color);
 }
 
 footer > p {
-	position: fixed;
 	text-align: center;
 	left: 0;
 	bottom: 0;
-	background-color: #ba786d;
 	width: 100%;
-	padding: 8px;
 	margin-bottom: 0;
+	color: white;
+	margin : 0;
 }
 
 /* Media Queries */
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 350px) {
 	/* Code here */
-	/* header {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-	} */
-
-	/* .logo-neo-dev {
-		width: 64px;
-		height: fit-content;
-	} */
-
 	
-	.picture-icon {
-		width: px;
+	footer > p {
+		display: block;
 	}
-	
+
 	h1 {
-	display: none;
+		display: none;
 	}
-
+	
 	.picture-upload-section {
 		background-color: #d3b0aa;
 		border-radius: 94px;
@@ -297,103 +269,142 @@ footer > p {
 	p {
 		display: none;
 	}
-
+	
 	main {
 		display: block;
 	}
 
 	#section-1{
 		width:100%;
-		padding-right: 100px;
 		height: 50%;
 	}
 
+	#form-section-1{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.text-field{
+		text-align: center;
+		width: 100%;
+	}
+	
 	#section-2{
 		display: block;
 		width:100%;
 		margin:0;
 	}
-
+	
 	.picture-upload-section{
 		margin: 0 10px 0 0;
 	}
-
+	
 	#plus-button {
 		width:300px;
-		margin:0;
 	}
 
-	#language {
-		margin: 10px 0 10px 50px;;
-	}
-
-	/* #section-1 > form {
-		display: grid;
-		grid-template-columns: auto;
-		width: 30%;
-		margin: 16px;
-		padding-left: 8px;
-		padding-right: 8px;
-		gap: 8px;
-		position: absolute;
-	} */
-
-	h2 {
-		display: none;
-	}
-
-	/* #section-2 > form, fieldset {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		margin: auto;
-	}  */
-}
-	/* fieldset {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	} */
-/* }*/
-
-/* @media screen and (min-width: 650px) {
-	main {
-		display: block;
-		gap:50px;
+	strong {
+		font-size: 18px;;
 	}
 	
-	#section-1{
-		width: 100%;
-		display: flex;
-		justify-content: center;
+	#language {
+		margin: 10px 0 10px 0px;;
 	}
 
-	#section-2{
-		margin:100px 0 0 0;
+	.user-box{
 		display: flex;
-		justify-content: center;
 		flex-direction: column;
 	}
 
-	#language {
-		margin: 0 0 0 120px;
+	#plus-button{
+		width: 100%;
+		margin:0;
+		display: flex;
+		justify-content: center;
 	}
-};
 
-@media screen and (min-width: 950px) {
+	#language-list {
+		margin: 0;
+		
+	}
+
+	.dot-list {
+		margin: 5px 0;
+	}
+
+	fieldset {
+		margin-top: 20px;
+	}
+
+	#bottom-form{
+		display: flex;
+		align-items: center;
+	}
+
+	.submit-button{
+		margin: 0;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	
+
+
+	h1 {
+			display: block;
+			font-size:28px;
+			text-align: center;
+	}
 	.user-box{
-		display: block;
-
+		display: flex;
+		flex-direction:row;
+		align-items: center;
+		justify-content: flex-end;
+		flex-wrap: wrap;
 	}
 
-	#form-section-1{
-		display: block;
+	#language-list {
+		margin-left: 150px;
+		
 	}
 
 	.text-field{
-		text-align: left;
+		width: 150px;
 	}
 
-	#section-2{
-		margin:0;
+	#section-1{
+		margin-bottom: 20px;
 	}
-} */
+
+}
+
+@media screen and (min-width: 900px) {
+
+	.upload-text {
+		display: block;
+	}
+
+	main {
+		display: flex;
+		width: 100%;
+
+	}
+
+	#section-1, #section-2{
+		width:50%;
+	}
+
+	#section-2 {
+		margin-top: 64px;
+	}
+
+	#language-list {
+		margin-left: 50px;
+	}
+
+	h1{
+		font-size: 32px;
+	}
+}	
+
