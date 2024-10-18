@@ -217,7 +217,7 @@ fieldset {
 	margin: 8px;
 	margin-right: 164px;
 	border: #8a3f32;
-	border-radius: 32px;
+	border-radius: 8px;
 	font-family: "Montserrat", sans-serif;
 	font-weight: bold;
 }
@@ -242,8 +242,9 @@ footer > p {
 	bottom: 0;
 	width: 100%;
 	margin-bottom: 0;
-	color: white;
+	color: black;
 	margin: 0;
+	font-weight:bold;
 }
 
 /* Media Queries */
@@ -252,6 +253,10 @@ footer > p {
 
 	footer > p {
 		display: block;
+	}
+
+	footer {
+		background-color: white;
 	}
 
 	h1 {
@@ -373,6 +378,12 @@ footer > p {
 }
 
 @media screen and (min-width: 900px) {
+	
+	footer {
+		background-color: var(--button-background-color);
+	}
+
+	
 	.upload-text {
 		display: block;
 	}

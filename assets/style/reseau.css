@@ -42,8 +42,23 @@ p {
 }
 /* Header */
 
+#logout-button:hover{
+  font-weight: bolder;
+}
+
+.statut {
+  width: 100%;
+  text-align: center;
+  margin-left: 80px;
+}
+
+.statut > h2 {
+  font-family: var(--title-font-style);
+  /* margin-left: 4vw; */
+}
+
 #logo {
-  max-width: 9.5vw;
+  width: 16vw;
 
 }
 
@@ -88,11 +103,6 @@ header {
   gap:10px;
 }
 
-h2 {
-  font-family: var(--title-font-style);
-  margin-left: 4vw;
-}
-
 input {
   border: none;
 }
@@ -101,11 +111,12 @@ input {
 .explanation {
   font-family: var(--main-font-style);
   font-style: italic;
-  font-size: xx-small;
+  font-size:medium;
   color: #ba786d;
   text-align: center;
   margin: 1vh 4vw 1vh 4vw;
 }
+
 #expButton {
   background: none;
   border: none;
@@ -298,7 +309,7 @@ article > div > img {
 /* Media Queries */
 @media screen and (min-width: 300px) and (max-width: 999px) {
   #reseau-profil-div{
-display:none;
+    display:none;
   }
 
   #search-bar {
@@ -311,6 +322,11 @@ display:none;
     top: 80vh;
     min-width: 10vw;
   }
+
+  .explanation{
+    display: none;
+  }
+
   #dislike {
     position: absolute;
     left: 10vw;
@@ -318,12 +334,16 @@ display:none;
     min-width: 10vw;
   }
 
-  #linkedIn, #GitHub {
-    max-width: fit-content;
+  .external {
+    /* max-width: fit-content; */
+    width: 40px;
     min-width: 30vw;
     max-height: 20vh;
     min-height: 5vh;
-    font-size: x-small;
+    font-size:large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   main>p {
@@ -337,6 +357,11 @@ display:none;
   #images-of-projects{
     background-size: cover;
   }
+
+  .statut {
+    margin-left: 0px;
+  }
+
 }
 
 
@@ -354,4 +379,6 @@ display:none;
   #images-of-projects {
     height: 90vh;
   }
+
+
 }

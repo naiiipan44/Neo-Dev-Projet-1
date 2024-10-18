@@ -158,9 +158,6 @@ nav > a {
 
 /* Profil menu */
 
-/* #post-container {
-  scroll-behavior: smooth;
-} */
 
 #profil-menu,
 #button-add {
@@ -387,6 +384,7 @@ footer p {
 
   footer p {
     display: flex;
+    font-weight: bold;
   }
 
   main {
