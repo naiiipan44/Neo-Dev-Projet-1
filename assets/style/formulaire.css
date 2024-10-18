@@ -245,6 +245,7 @@ footer > p {
 	color: black;
 	margin: 0;
 	font-weight:bold;
+	font-size: 12px;
 }
 
 /* Media Queries */
