@@ -173,6 +173,9 @@ nav > a {
   border-radius: 10px;
   height: 10%;
   width: 75%;
+  text-align: center;
+  padding-top: 6px;
+  font-size: 12px;
 }
 
 /* Post Layout */

@@ -12,11 +12,23 @@ console.log(parseUser);
 // button variables
 const likeButton = document.getElementById("like");
 const dislikeButton = document.getElementById("dislike");
-const hideButton = document.getElementById("hide-button")
+const hideButton = document.getElementById("hide-button");
 
 //text elements to be changed
-const profileText = document.querySelector("#about-me")
+const profileText = document.querySelector("#about-me");
+const explanationText = document.querySelector("#explanation");
+const explainButton = document.getElementById("expButton");
 
+//hide explanation
+explainButton.addEventListener("click", function () {
+  if (explanationText.style.display === "none") {
+    explanationText.style.display = "block"
+    explainButton.textContent ="cacher"
+   } else {
+    explanationText.style.display = "none"
+    explainButton.textContent = "montrer"
+  }
+})
 
 //image carousel
 previewImages.style.backgroundImage = slide1;
@@ -37,9 +49,14 @@ previewImages.addEventListener("click", function () {
 });
 
 //like/dislike button behaviours
+
+const likedAnimation = document.getElementById("liked-image");
+const dislikedAnimation = document.getElementById("disliked-image");
+
 likeButton.addEventListener("click", function () {
   console.log("works");
   likeButton.src = "/assets/images/likeGreenSvg.svg"
+  likedAnimation.classList.add('transition')
   setTimeout(function () {
     window.location.href = "/pages/reseau2.html";
   }, 1000)
@@ -48,6 +65,7 @@ likeButton.addEventListener("click", function () {
 dislikeButton.addEventListener("click", function () {
   console.log("works also")
   dislikeButton.src = "/assets/images/dislikeBlueSvg.svg"
+  dislikedAnimation.classList.add('transition')
   setTimeout(function () {
     window.location.href = "/pages/reseau2.html";
   }, 1000)

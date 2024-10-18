@@ -4,7 +4,7 @@ const previewImages = document.getElementById("images-of-projects")
 const slide1 = 'url("/assets/images/NinonScreen1.png")';
 const slide2 = 'url("/assets/images/NinonScreen2.png")';
 const slide3 = 'url("/assets/images/NinonScreen3.png")';
-const likedAnimation = document.getElementById("liked-image");
+
 
 // form variables
 const retrieveUser = localStorage.getItem("user");
@@ -18,6 +18,19 @@ const hideButton = document.getElementById("hide-button")
 
 //text elements to be changed
 const profileText = document.querySelector("#about-me")
+const explanationText = document.querySelector("#explanation");
+const explainButton = document.getElementById("expButton");
+
+//hide explanation
+explainButton.addEventListener("click", function () {
+  if (explanationText.style.display === "none") {
+    explanationText.style.display = "block"
+    explainButton.textContent ="cacher"
+   } else {
+    explanationText.style.display = "none"
+    explainButton.textContent = "montrer"
+  }
+})
 
 
 //image carouselx
@@ -39,23 +52,23 @@ previewImages.addEventListener("click", function () {
 });
 
 //like/dislike button behaviours
+
+const likedAnimation = document.getElementById("liked-image");
+const dislikedAnimation = document.getElementById("disliked-image");
+
 likeButton.addEventListener("click", function () {
   console.log("works");
   likeButton.src = "/assets/images/likeGreenSvg.svg"
-  likedAnimation.classList.add('transition-liked')
-  // setTimeout(function () {
-  //   window.location.href = "/pages/reseau3.html";
-  // }, 1000)
-
-  // transition test: 
-  //   likedAnimation.style.display = "block"
-  // likedAnimation.style.opacity = "1"
-  // likedAnimation.style.transition = "900ms"
+  likedAnimation.classList.add('transition')
+  setTimeout(function () {
+    window.location.href = "/pages/reseau3.html";
+  }, 1000)
 })
 
 dislikeButton.addEventListener("click", function () {
   console.log("works also")
   dislikeButton.src = "/assets/images/dislikeBlueSvg.svg"
+  dislikedAnimation.classList.add('transition')
   setTimeout(function () {
     window.location.href = "/pages/reseau3.html";
   }, 1000)
