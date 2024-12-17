@@ -10,6 +10,9 @@ The form page allows the user to enter its personnal information!
 
 Neo-Dev est une application dont le but est de mettre en relation des développeurs juniors et des recruteurs. 
 
+![Capture d'écran 2024-12-17 162544](https://github.com/user-attachments/assets/8c9386e3-6389-4b68-bf5b-e85464fd0a4b)
+
+
 ![Capture d'écran 2024-12-17 162508](https://github.com/user-attachments/assets/284487c7-0ab7-41e7-a6dc-687cf0c890c8)
 [NEO DEV.pdf](https://github.com/user-attachments/files/18167604/NEO.DEV.pdf)
 
