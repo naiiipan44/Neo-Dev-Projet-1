@@ -8,6 +8,8 @@ if the user is not known by the site "data base". In both popup and accueil page
 
 The form page allows the user to enter its personnal information!
 
+Neo-Dev est une application dont le but est de mettre en relation des développeurs juniors et des recruteurs. 
+
 ![Capture d'écran 2024-12-17 162508](https://github.com/user-attachments/assets/284487c7-0ab7-41e7-a6dc-687cf0c890c8)
 [NEO DEV.pdf](https://github.com/user-attachments/files/18167604/NEO.DEV.pdf)
 
